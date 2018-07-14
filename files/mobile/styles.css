@@ -9,6 +9,9 @@
   text-align:left;
 }
 /*additional body generate result*/
+#base.open{
+  position: fixed;
+}
 #u280, #u261{
   background: url(../../images/mobile/grafis-beli-paket.png) no-repeat !important;
 }

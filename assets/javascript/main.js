@@ -6,6 +6,7 @@
                 
                 $('#burger-menu').click(function(){
                     overlay.toggle('show');
+                    $('#base').toggleClass('open');
                     $('#wrapper').toggleClass('toggled');
                     $(this).toggleClass('open');
                     body.toggleClass('site-nav-transition site-nav-drawer-open');

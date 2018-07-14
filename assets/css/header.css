@@ -66,6 +66,7 @@ html, body{
 */
   margin: 5px;
   overflow: hidden;
+      padding-left: 15px;
 }
 
 #burger-menu{
@@ -155,7 +156,8 @@ ul{
     width: 34px
 }
 .logo-loop{
-    padding-left: 20px
+    padding-left: 20px;
+    margin-top: 2%
 }
 .search-bar{
     margin-left: auto;
@@ -554,6 +556,7 @@ li.red-menu_nav a{
     line-height: 2.8;
     margin-left: 18px;
     padding-right: 20px;
+    font-size: 18px
 /*    border-right: 1px solid #bfbfbfaa;*/
 }
 /*
