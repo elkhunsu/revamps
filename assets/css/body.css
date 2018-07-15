@@ -169,4 +169,10 @@ body {
   z-index: 0;
 }
 
+.slick-list{
+  overflow: unset !important
+}
 
+.ax_default.slick-slide.slick-cloned{
+  display: none
+}
