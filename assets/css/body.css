@@ -181,3 +181,111 @@ body {
     -webkit-transition: transform 2s; /* Safari */
     transition: transform 2s;
 }
+.beli-paket_box{
+  transition: transform .2s;
+}
+
+.card-beli_paket, .card-beli_paket_2{
+    font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #4A4A4A;
+    text-align: left;
+    line-height: 16px;
+    border-width: 0px;
+    position: absolute;
+    left: 23px;
+    top: 1770px;
+    width: 304px;
+    height: 335px;
+    background: url(../../images/mobile/grafis-beli-paket.png) no-repeat !important;
+}
+.card-beli_paket_2{
+  left: 355px
+}
+.content-card{
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 304px;
+    height: 335px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 4px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;  }
+.content-card .harga{
+    border-width: 0px;
+    position: absolute;
+    left: 20px;
+    top: 152px;
+    width: 130px;
+    height: 26px;
+    font-family: 'Lato-Bold', 'Lato Bold', 'Lato';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #F9A036;
+    text-align: left;
+  }
+.card-paket_content{
+    top: 103px;
+    left: 20px;
+    width: 250px;
+    text-align: left;
+    position: absolute;
+  }
+.box-popular{
+    width: 97px;
+    background-color: red;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+    margin: 11px;
+    margin-right: 14px;
+    }
+.icon-popular{
+    margin-left: 3px;
+    margin-right: 6px;
+}
+span.harga img{
+  margin-right: 5px
+}
+.paket-name, .data-nominal{
+  font-family: 'Montserrat-Bold', 'Montserrat Bold', 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    top: 197px;
+    left: 20px;
+    position: absolute;
+}
+.data-nominal{
+  font-size: 60px;
+  top: 245px
+}
+.btn.-orange{
+    font-family: 'Lato-Bold', 'Lato Bold', 'Lato';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    border-width: 0px;
+    position: absolute;
+    color: #fff;
+    left: 121px;
+    top: 308px;
+    width: 162px;
+    height: 47px;
+    background-color: rgba(249, 160, 54, 1);
+    border: none;
+    border-radius: 21.5px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}

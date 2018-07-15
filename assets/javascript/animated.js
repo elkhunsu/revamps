@@ -78,8 +78,8 @@ $(document).ready(function () {
                 // Calculate the distance swiped.
                 var absMove = Math.abs(this.index * this.slideWidth - this.movex);
                 // Calculate the index. All other calculations are based on the index.
-                if (absMove > this.slideWidth / 2 || this.longTouch === false) {
-                    if (this.movex > this.index * this.slideWidth && this.index < 2) {
+                if (absMove > this.slideWidth / 4 || this.longTouch === false) {
+                    if (this.movex > this.index * this.slideWidth && this.index < 4) {
                         this.index++;
                     } else if (this.movex < this.index * this.slideWidth && this.index > 0) {
                         this.index--;
@@ -98,40 +98,49 @@ $(document).ready(function () {
 });
 
 
-var myIndex = 0;
-setTimeout(carousel(), 3000);
+// var myIndex = 0;
+// setTimeout(carousel(), 3000);
 
-function carousel() {
-    setTimeout(function () {
-        var i;
-        var x = document.getElementsByClassName("slide-image");
-        for (i = 0; i < x.length; i++) {
-            // x[i].style.display = "none";  
+// function carousel() {
+//     setTimeout(function () {
+//         var i;
+//         var x = document.getElementsByClassName("slide-image");
+//         for (i = 0; i < x.length; i++) {
+//             // x[i].style.display = "none";  
 
-        }
-        myIndex++;
-        if (myIndex > x.length) {
-            myIndex = 1
-        }
-        // x[myIndex-1].style.display = "block";  
-        switch (myIndex) {
-            case 0:
-                translate3d(0);
-                break;
-            case 1:
-                translate3d(-425);
-                break;
-            case 2:
-                translate3d(-850);
-                break;
-            case 3:
-                translate3d(0);
-                break;
-        }
+//         }
+//         myIndex++;
+//         if (myIndex > x.length) {
+//             myIndex = 1
+//         }
+//         // x[myIndex-1].style.display = "block";  
+//         switch (myIndex) {
+//             case 0:
+//             setTimeout(function(){
+//                 translate3d(0);
+//             }, 5000);
+                
+//                 break;
+//             case 1:
+//                 translate3d(-425);
+//                 break;
+//             case 2:
+//                 translate3d(-850);
+//                 break;
+//             case 3:
+//                 translate3d(-1000);
+//                 break;
+//             case 4:
+//                 translate3d(0);
+//                 break;
+//             case 5:
+//                 translate3d(0);
+//                 break;
+//         }
 
-        setTimeout(carousel, 2000); // Change image every 2 seconds  }, 3000);
-    }, 2000);
-}
+//         setTimeout(carousel, 2000); // Change image every 2 seconds  }, 3000);
+//     }, 2000);
+// }
 
 function translate3d(move) {
     setTimeout(function () {
