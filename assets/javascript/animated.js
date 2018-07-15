@@ -98,49 +98,49 @@ $(document).ready(function () {
 });
 
 
-// var myIndex = 0;
-// setTimeout(carousel(), 3000);
+var myIndex = 0;
+setTimeout(carousel(), 3000);
 
-// function carousel() {
-//     setTimeout(function () {
-//         var i;
-//         var x = document.getElementsByClassName("slide-image");
-//         for (i = 0; i < x.length; i++) {
-//             // x[i].style.display = "none";  
+function carousel() {
+    setTimeout(function () {
+        var i;
+        var x = document.getElementsByClassName("slide-image");
+        for (i = 0; i < x.length; i++) {
+            // x[i].style.display = "none";  
 
-//         }
-//         myIndex++;
-//         if (myIndex > x.length) {
-//             myIndex = 1
-//         }
-//         // x[myIndex-1].style.display = "block";  
-//         switch (myIndex) {
-//             case 0:
-//             setTimeout(function(){
-//                 translate3d(0);
-//             }, 5000);
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        // x[myIndex-1].style.display = "block";  
+        switch (myIndex) {
+            case 0:
+            setTimeout(function(){
+                translate3d(0);
+            }, 5000);
                 
-//                 break;
-//             case 1:
-//                 translate3d(-425);
-//                 break;
-//             case 2:
-//                 translate3d(-850);
-//                 break;
-//             case 3:
-//                 translate3d(-1000);
-//                 break;
-//             case 4:
-//                 translate3d(0);
-//                 break;
-//             case 5:
-//                 translate3d(0);
-//                 break;
-//         }
+                break;
+            case 1:
+                translate3d(-425);
+                break;
+            case 2:
+                translate3d(-850);
+                break;
+            case 3:
+                translate3d(-1000);
+                break;
+            case 4:
+                translate3d(0);
+                break;
+            case 5:
+                translate3d(0);
+                break;
+        }
 
-//         setTimeout(carousel, 2000); // Change image every 2 seconds  }, 3000);
-//     }, 2000);
-// }
+        setTimeout(carousel, 2000); // Change image every 2 seconds  }, 3000);
+    }, 2000);
+}
 
 function translate3d(move) {
     setTimeout(function () {
