@@ -176,3 +176,8 @@ body {
 .ax_default.slick-slide.slick-cloned{
   display: none
 }
+
+#slider .holder{
+    -webkit-transition: transform 2s; /* Safari */
+    transition: transform 2s;
+}
