@@ -209,7 +209,14 @@ ul{
     background: #cc4b37;
     color: #fefefe;
 }
-
+.badge.normal{
+    display: inherit;
+    min-width: 1em;
+    padding: 5px;
+    right: -7px;
+    top: -6px;
+    background-color: #4e4e4e;
+}
 /*badge notif content*/
 .badge.notif-badge{
     position: initial;
@@ -847,6 +854,56 @@ div.box-content_title{
     text-align: center;
     margin: 6px;
     padding: 2px;
+}
+.user-non_login{
+    font-family: 'Lato-Regular', 'Lato';  
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn.custom-submit{
+    color: white;
+    background-color: #094663;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    height: 45px;
+    margin-top: 8px;
+}
+.line-through{
+    text-align: center;
+     width:100%; 
+     text-align:center; 
+     border-bottom: 1px solid #000; 
+     line-height:0.1em; 
+     margin:30px 0 30px;
+
+}
+.line-through span{
+    background:#fff; 
+    padding:0 10px; 
+}
+.social_media .row{
+    margin-bottom: 20px;
+}
+.btn.sosmed{
+    height: 38px;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 30px
+}
+.sosmed img{
+    width: 17px;
+    position: absolute;
+    left: 35px;
+    top: 10px
+}
+legend{
+    font-size: 23px;
+    font-weight: 800;
 }
 @media screen and (max-width: 450px) {
     .site-nav {padding-top: 15px;}

@@ -58,7 +58,8 @@
                 </li>
                 <li class="notif-badge">
                     <a href="#" class="button-badge">
-                        <span class="badge alert" id="notif-count">1</span>
+                        <span class="badge normal"></span>
+                        <span class="badge alert" id="notif-count"></span>
                     </a>
                 </li>
                 <li class="users-sign">
@@ -83,7 +84,7 @@
                                     </li>
                                     <li>
                                         <a href="#activity-content" data-toggle="tab" id="notif-activity">
-                                            Aktivitas <span class="badge alert notif-badge" id="notif-activity_num">6</span></a>
+                                            Aktivitas <span class="badge alert notif-badge" id="notif-activity_num"></span></a>
                                     </li>
                                 </ul>
                                 <div class="tab-content">
@@ -176,17 +177,17 @@
                                     </div>
                                     <div class="tab-pane" id="activity-content">
                                         <div class="tab-box_content">
-                                            <span class="title-activity"><span class="coin-loop_icon"></span>100 Koin Loopiah!</span>
+                                            <!-- <span class="title-activity"><span class="coin-loop_icon"></span>100 Koin Loopiah!</span>
                                             <span class="content-activity">Selamat kamu mendapatkan 100 Koin LOOPiah dari login harian di loop.co.id</span>
-                                            <span class="time-activity"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 Maret 2018 14:15 WIB</span>
+                                            <span class="time-activity"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 Maret 2018 14:15 WIB</span> -->
                                         </div>
                                         <div class="tab-box_content">
-                                            <span class="title-activity"><span class="coin-loop_icon"></span>100 Koin Loopiah!</span>
+<!--                                             <span class="title-activity"><span class="coin-loop_icon"></span>100 Koin Loopiah!</span>
                                             <span class="content-activity">Selamat kamu mendapatkan 100 Koin LOOPiah dari login harian di loop.co.id</span>
                                             <span class="time-activity"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 Maret 2018 14:15 WIB</span>
-                                        </div>
-                                        <div class="btn btn-primary load-more">Aktivitas Lainnya</div>
-                                    </div>
+ -->                                        </div>
+<!--                                         <div class="btn btn-primary load-more">Aktivitas Lainnya</div>
+ -->                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -198,30 +199,67 @@
                         <li class="header-nav"></li>
                     </ul>
                     <div class="user-overlay_content">
-                        <div class="info-user">
-                            <div class="avatar_user">
-                                <span class="image-avatar"><img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"><span class="badge-level _level1"></span></span>
+                        <div class="user-non_login">
+                            <form class="form-horizontal">
+                            <fieldset>
+
+                            <!-- Form Name -->
+                            <legend>MASUK</legend>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="email">Email atau No. Handphone</label>  
+                              <div class="col-md-4">
+                              <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
+                                
+                              </div>
                             </div>
-                            <div class="name-user">
-                                <span>KIM JAEHA</span>
+
+                            <!-- Password input-->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="password">Kata Sandi</label>
+                              <div class="col-md-4">
+                                <input id="password" name="password" type="password" placeholder="" class="form-control input-md">
+                                
+                              </div>
                             </div>
-                            <div class="level-user">
-                                <span class="">Level 5 | Newbie</span>
+
+                            <!-- Button -->
+                            <div class="form-group">
+                              <div class="col-md-4">
+                                <button id="submit" name="submit" class="btn btn-primary btn-block custom-submit">MASUK</button>
+                              </div>
                             </div>
-                            <div class="poin-users">
-                                <div class="loopiah">
-                                    <span>LOOPiah Koin</span>
-                                    <span><span class="coin-loop_icon"></span> 53.200</span>
+
+                            </fieldset>
+                            </form>
+
+                            <div class="form-signup">
+                                <p>Belum punya akun? <span style="color: #81c1c5;font-weight: 800;font-size: 15px;">Daftar</span></p>
+                                <p>Lupa kata sandi? <span style="color: #81c1c5;font-weight: 800;font-size: 15px;">Perbaharui Kata Sandi</span></p>
+                            </div>
+                            <div class="line-through"><span>atau</span></div>
+                            <div class="social-media_login">
+                                <div style="text-align: center;margin-bottom: 2em;">Masuk dengan menggunakan</div>
+                                <div class="social_media">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-md-6">
+                                            <div class="btn sosmed btn-default btn-block"><img src="images/social-media/icon_google.png">Google</div>
+                                        </div>
+                                        <div class="col-xs-6 col-md-6">
+                                            <div class="btn btn-default btn-block sosmed"><img src="images/social-media/icon_fb.png">Facebook</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 col-md-6">
+                                            <div class="btn btn-default btn-block sosmed"><img src="images/social-media/icon_twitter.png">Twitter</div>
+                                        </div>
+                                        <div class="col-xs-6 col-md-6">
+                                            <div class="btn btn-default btn-block sosmed"><img src="images/social-media/icon_ig.png">Instagram</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="loopsquad">
-                                    <span>LOOPiah Koin</span>
-                                    <span><span class="coin-loop_icon"></span> 53.200</span>
-                                </div>
                             </div>
-                        </div>
-                        <div class="menu-users">
-                            <ul class="nav menu-users_nav" id="menu-user_nav">
-                            </ul>
                         </div>
                     </div>
                 </div>

@@ -80,13 +80,21 @@
                         header.removeClass("scroll");
                     }
                 });
-                setInterval(function(){
-                        var x = $('#notif-count').text();
-                        alertNotif(x);
-                },5000);
-                
-                setInterval(function(){
-                        var y = $('#putar-notif .putar-badge').text();
-                        alertNotif(y);
-                },6000);
+
+                function notifLogin(){
+                    $.get("user-login.html", function(data){
+                        $('.user-overlay_content').children("div:first").empty().html(data);
+                    });
+                    setInterval(function(){
+                            var x = $('#notif-count').text();
+                            alertNotif(x);
+                    },5000);
+                    
+                    setInterval(function(){
+                            var y = $('#putar-notif .putar-badge').text();
+                            alertNotif(y);
+                    },6000);
+                }
+
+                $('#submit').click(function(){notifLogin();})
             });
