@@ -187,7 +187,7 @@ body {
 }
 .beli-paket_box{
   display: block;
-  top: 1780px;
+  top: 1280px;
   position: relative;
   height: 372px;
   width: 413px;
@@ -305,6 +305,7 @@ span.harga img{
   position: relative;
   height: 476px;
   width: 413px;
+  padding-left: 35px;
   overflow-y: hidden; 
   overflow-x: scroll; 
   -webkit-overflow-scrolling: touch; 
@@ -340,4 +341,31 @@ span.harga img{
   color: rgba(0, 0, 0, 0.541176470588235);
   text-align: left;
   line-height: 22px;
+}
+.testi-photo{
+  position: absolute;
+  bottom: 96px;
+  left: 35px;
+}
+.testi-photo img{
+  border-radius: 50%;
+}
+.testi-name{
+  position: absolute;
+  font-family: 'Lato-Regular', 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  position: absolute;
+  bottom: 70px;
+  left: 120px;
+}
+.testi-member{
+  font-size: 10px;
+  font-family: 'Lato-Regular', 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  bottom: 43px;
+  left: 120px;
 }

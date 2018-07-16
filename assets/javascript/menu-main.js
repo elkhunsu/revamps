@@ -15,15 +15,15 @@
                     link: '#',
                     class: 'icon-sprite-menu _product',
                     sub: [{
-                        name: 'Arsenal',
+                        name: 'Kartu Perdana',
                         link: '0-0',
                         sub: null
                     }, {
-                        name: 'Liverpool',
+                        name: 'Info Tarif',
                         link: '0-1',
                         sub: null
                     }, {
-                        name: 'Manchester United',
+                        name: 'Info Paket',
                         link: '0-2',
                         sub: null
                     }]

@@ -401,6 +401,9 @@ ul.menu-users_nav li:last-child{
 
 #menu-sidebar{
     margin-top: 30px;
+    font-size: 16px;
+    font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
 }
 
 #main{
@@ -531,6 +534,9 @@ li.red-menu_nav a{
     width: 100%;
     z-index: 9998;
     overflow-y: auto;
+    font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+    font-size: 16px;
 }
 .overlay-content_notif{
     margin-top: 4rem
@@ -548,7 +554,7 @@ li.red-menu_nav a{
     margin-left: auto;
     margin-right: auto;
     width: 45%;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 18px;
     line-height: 2.7
 }
@@ -587,6 +593,7 @@ li.red-menu_nav a{
     border: none;
     margin: 0px;
     display: flex;
+    font-weight: 600;
 }
 .tabbable-line > .nav-tabs > li {
     margin-right: auto;
@@ -632,6 +639,7 @@ li.red-menu_nav a{
     border: 0;
     border-top: 1px solid #eee;
     padding: 15px 0;
+    padding-left: 15px;
 }
 .tabbable-line > .nav-tabs > li:first-child{
     border-right: 1px solid #eaeaea
@@ -743,13 +751,14 @@ div.box-content_title{
     line-height: 2;
     box-shadow: 0 5px 19px 3px #000000;
     z-index: 999;
+    font-weight: 600
 }
 
 /* activity notif */
 .coin-loop_icon{
     background: url(../images/icon-user-sprite.png) 0px -24px;
     background-size: 352px;
-    background-color: white;
+    /*background-color: white;*/
     padding: 8px;
     margin-right: 5px;
 }
@@ -799,6 +808,8 @@ div.box-content_title{
     height: 200px
 }
 .name-user{
+    font-size: 19px;
+    font-weight: 600;
     text-align: center;
 }
 .level-user{
@@ -812,13 +823,15 @@ div.box-content_title{
 }
 .loopsquad{
     float: right;
-    width: 15%;
-    font-size: 12px;
+    width: 30%;
+    font-weight: 600;
+    font-size: 13px;
 }
 .loopiah{
     float: left;
-    width: 15%;
-    font-size: 12px;
+    width: 30%;
+    font-weight: 600;
+    font-size: 13px;
 }
 .menu-users{
     /*    margin-left: 20px;*/
