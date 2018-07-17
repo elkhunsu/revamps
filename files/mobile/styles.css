@@ -686,6 +686,7 @@
   top:2455px;
   width:383px;
   height:239px;
+  box-shadow: 0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
 }
 #u30_text {
   border-width:0px;
@@ -1148,6 +1149,7 @@
   top:2707px;
   width:187px;
   height:187px;
+  box-shadow: 0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
 }
 #u49_text {
   border-width:0px;
@@ -1710,6 +1712,7 @@
   top:2707px;
   width:187px;
   height:187px;
+  box-shadow: 0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
 }
 #u74_text {
   border-width:0px;

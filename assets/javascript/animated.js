@@ -78,8 +78,8 @@ $(document).ready(function () {
                 // Calculate the distance swiped.
                 var absMove = Math.abs(this.index * this.slideWidth - this.movex);
                 // Calculate the index. All other calculations are based on the index.
-                if (absMove > this.slideWidth / 4 || this.longTouch === false) {
-                    if (this.movex > this.index * this.slideWidth && this.index < 4) {
+                if (absMove > this.slideWidth / 3 || this.longTouch === false) {
+                    if (this.movex > this.index * this.slideWidth && this.index < 3) {
                         this.index++;
                     } else if (this.movex < this.index * this.slideWidth && this.index > 0) {
                         this.index--;
@@ -131,9 +131,6 @@ function carousel() {
                 translate3d(-1270);
                 break;
             case 4:
-                translate3d(0);
-                break;
-            case 5:
                 translate3d(0);
                 break;
         }
