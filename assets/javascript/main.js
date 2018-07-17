@@ -82,7 +82,7 @@
                 });
 
                 function notifLogin(){
-                    $.get("user-login.html", function(data){
+                    $.get("https://raw.githubusercontent.com/elkhunsu/revamps/master/user-login.html", function(data){
                         $('.user-overlay_content').children("div:first").empty().html(data);
                     });
                     setInterval(function(){

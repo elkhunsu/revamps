@@ -128,7 +128,7 @@ function carousel() {
                 translate3d(-850);
                 break;
             case 3:
-                translate3d(-1000);
+                translate3d(-1270);
                 break;
             case 4:
                 translate3d(0);
