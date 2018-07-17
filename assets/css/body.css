@@ -243,12 +243,14 @@ body {
     text-align: left;
   }
 .card-paket_content{
-    top: 103px;
+    top: 83px;
     left: 20px;
     width: 250px;
     text-align: left;
     position: absolute;
-  }
+    font-size: 14px;
+    line-height: 20px;
+}
 .box-popular{
     width: 97px;
     background-color: red;

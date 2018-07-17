@@ -139,7 +139,7 @@ function carousel() {
         }
 
         setTimeout(carousel, 2000); // Change image every 2 seconds  }, 3000);
-    }, 2000);
+    }, 10000);
 }
 
 function translate3d(move) {

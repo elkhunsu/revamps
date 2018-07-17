@@ -88,19 +88,18 @@
                         $('.user-overlay').css('display', 'block');
                     });
                     $.get("https://raw.githubusercontent.com/elkhunsu/revamps/master/aktivitas.html", function(data){
-                        $('#tab-notif').append("<li><a href='#activity-content' data-toggle='tab' id='notif-activity' aria-expanded='false'>Aktivitas <span class='badge notif-badge' id='notif-activity_num'></span></a></li>");
-                        $('#romos-content').append().html(data);
+                        $('#activity-content').append(data);
                     });
 
                     setInterval(function(){
                             var x = $('#notif-count').text();
                             alertNotif(x);
-                    },5000);
+                    },10000);
                     
                     setInterval(function(){
                             var y = $('#putar-notif .putar-badge').text();
                             alertNotif(y);
-                    },6000);
+                    },10000);
                 }
 
                 $('#submit').click(function(){notifLogin();})
