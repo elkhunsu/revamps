@@ -703,6 +703,7 @@
   top:0px;
   width:383px;
   height:102px;
+  opacity: .5;
 }
 #u31 {
   border-width:0px;
@@ -7541,6 +7542,7 @@
   word-wrap:break-word;
 }
 #u308 {
+  display: none;
   border-width:0px;
   position:absolute;
   left:0px;

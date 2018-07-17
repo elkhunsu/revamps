@@ -197,7 +197,7 @@ body {
   transition: transform .2s;
 }
 
-.card-beli_paket, .card-beli_paket_2{
+.card-beli_paket, .card-beli_paket_2, .card-beli_paket_3, .card-beli_paket_4{
     font-family: 'Lato-Regular', 'Lato';
     font-weight: 400;
     font-style: normal;
@@ -214,6 +214,12 @@ body {
 }
 .card-beli_paket_2{
   left: 355px
+}
+.card-beli_paket_3{
+  left: 686px
+}
+.card-beli_paket_4{
+  left: 1018px
 }
 .content-card{
     border-width: 0px;
@@ -235,7 +241,7 @@ body {
     top: 152px;
     width: 270px;
     height: 26px;
-    font-family: 'Lato-Bold', 'Lato Bold', 'Lato';
+    /*font-family: 'Lato-Bold', 'Lato Bold', 'Lato';*/
     font-weight: 700;
     font-style: normal;
     font-size: 18px;
@@ -252,7 +258,7 @@ body {
     line-height: 20px;
 }
 .box-popular{
-    width: 97px;
+    width: 102px;
     background-color: red;
     padding: 5px;
     border-radius: 4px;
