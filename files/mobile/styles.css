@@ -21,7 +21,7 @@
 #base {
   position:absolute;
   z-index:0;
-  margin-top: 58px
+  margin-top: 45px
 }
 #u1 {
   border-width:0px;
@@ -5108,7 +5108,6 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:30px;
   height:30px;
 }
 #u211 {
@@ -7330,6 +7329,7 @@
   top:0px;
   width:315px;
   height:374px;
+  border-radius: 5px
 }
 #u299 {
   border-width:0px;
