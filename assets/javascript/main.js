@@ -88,7 +88,7 @@
                         $('.user-overlay').css('display', 'block');
                     });
                     $.get("https://raw.githubusercontent.com/elkhunsu/revamps/master/aktivitas.html", function(data){
-                        $('#tab-promo').append("<li><a href='#activity-content' data-toggle='tab' id='notif-activity' aria-expanded='false'>Aktivitas <span class='badge notif-badge' id='notif-activity_num'></span></a></li>");
+                        $('#tab-notif').append("<li><a href='#activity-content' data-toggle='tab' id='notif-activity' aria-expanded='false'>Aktivitas <span class='badge notif-badge' id='notif-activity_num'></span></a></li>");
                         $('#romos-content').append().html(data);
                     });
 
