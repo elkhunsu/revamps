@@ -83,8 +83,15 @@
 
                 function notifLogin(){
                     $.get("https://raw.githubusercontent.com/elkhunsu/revamps/master/user-login.html", function(data){
-                        $('.user-overlay_content').children("div:first").empty().html(data);
+                        $('.user-overlay_content').empty();
+                        $('.user-overlay_content').append().html(data);
+                        $('.user-overlay').css('display', 'block');
                     });
+                    $.get("https://raw.githubusercontent.com/elkhunsu/revamps/master/aktivitas.html", function(data){
+                        $('#tab-promo').append("<li><a href='#activity-content' data-toggle='tab' id='notif-activity' aria-expanded='false'>Aktivitas <span class='badge notif-badge' id='notif-activity_num'></span></a></li>");
+                        $('#romos-content').append().html(data);
+                    });
+
                     setInterval(function(){
                             var x = $('#notif-count').text();
                             alertNotif(x);
