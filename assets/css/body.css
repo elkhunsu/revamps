@@ -377,3 +377,22 @@ span.harga img{
   bottom: 43px;
   left: 120px;
 }
+@media (max-width: 360px){
+  .slide img{
+    width: 360px
+  }
+  #u236_text{
+    width: 325px;
+  }
+  #u193_text{
+    width: 298px
+  }
+  #u199_div{
+    width: 336px;
+  }
+  #u200_img{
+    top: 17px;
+    width: 80%;
+    height: 80%;
+  }
+}
