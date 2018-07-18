@@ -7266,7 +7266,7 @@
 #u295 {
   position: relative;
   display: block;
-  height: 372px;
+  height: 395px;
   width: 413px;
   top: 2406px;
   overflow-y: hidden; 
@@ -7282,12 +7282,15 @@
   height:0px;
 }
 #u297 {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:0px;
-  height:0px;
+  border-width: 0px;
+  position: relative;
+  left: -283px;
+  width: 312px;
+  height: 372px;
+  border-radius: 2%;
+  background: url('../../images/loop/loop_ngabubuhits.gif') no-repeat;
+  background-position-x: center;
+  background-size: cover;
 }
 #u298_div {
   border-width:0px;
@@ -7295,21 +7298,21 @@
   left:0px;
   top:0px;
   width:312px;
-  height:374px;
+  height:371px;
   background:inherit;
   background-color: #FFC107;
   z-index: 1;
   opacity: 0.3;
   border:none;
-  border-radius:4px;
-  -moz-box-shadow:2px 4px 7px rgba(0, 0, 0, 0.207843137254902);
-  -webkit-box-shadow:2px 4px 7px rgba(0, 0, 0, 0.207843137254902);
-  box-shadow:2px 4px 7px rgba(0, 0, 0, 0.207843137254902);
+  border-radius:12px;
+  -moz-box-shadow: 0 5px 50px 0 rgb(216, 11, 0), 0 5px 23px 0 rgba(148, 0, 0, 0.19);
+  -webkit-box-shadow: 0 5px 50px 0 rgb(216, 11, 0), 0 5px 23px 0 rgba(148, 0, 0, 0.19);
+  box-shadow: 0 5px 50px 0 rgb(216, 11, 0), 0 5px 23px 0 rgba(148, 0, 0, 0.19);
 }
 #u298 {
   border-width:0px;
   position:absolute;
-  left:-283px;
+  left:0px;
   width:312px;
   height:374px;
 }
@@ -7323,12 +7326,14 @@
   word-wrap:break-word;
 }
 #u299_img {
-  border-width:0px;
-  position:absolute;
-  left:-168px;
-  top:0px;
-  height:374px;
-  border-radius: 5px
+  border-width: 0px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 371px;
+  width: 309px;
+  border-radius: 7px;
+  vertical-align: middle;
 }
 #u299 {
   border-width: 0px;
@@ -7480,12 +7485,17 @@
   height:0px;
 }
 #u305 {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:0px;
-  height:0px;
+  border-width: 0px;
+  position: absolute;
+  left: 367px;
+  width: 312px;
+  height: 372px;
+  overflow: hidden;
+  background-image: url('../../images/loop/ilooprun2017.gif');
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+  box-shadow: 0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
 }
 #u306_div {
   border-width:0px;
@@ -7503,11 +7513,12 @@
   -moz-box-shadow:2px 4px 7px rgba(0, 0, 0, 0.207843137254902);
   -webkit-box-shadow:2px 4px 7px rgba(0, 0, 0, 0.207843137254902);
   box-shadow:2px 4px 7px rgba(0, 0, 0, 0.207843137254902);
+  border-radius: 5px
 }
 #u306 {
   border-width:0px;
   position:absolute;
-  left:367px;
+  left:0px;
   width:312px;
   height:374px;
 }
@@ -7678,12 +7689,18 @@
   height:0px;
 }
 #u313 {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:0px;
-  height:0px;
+  border-width: 0px;
+  position: absolute;
+  left: 43px;
+  width: 311px;
+  height: 372px;
+  overflow: hidden;
+  background-image: url('../../images/mobile/julian-gentilezza-414681-unsplash_u299.png');
+  background-size: cover;
+  border-radius: 3%;  
+  -moz-box-shadow: 0 5px 50px 0 rgb(255, 205, 203), 0 5px 23px 0 rgba(148, 0, 0, 0.19);
+  -webkit-box-shadow: 0 5px 50px 0 rgb(255, 205, 203), 0 5px 23px 0 rgba(148, 0, 0, 0.19);
+  box-shadow: 0 5px 50px 0 rgb(255, 205, 203), 0 5px 23px 0 rgba(148, 0, 0, 0.19);
 }
 #u314_div {
   border-width:0px;
@@ -7705,7 +7722,7 @@
 #u314 {
   border-width:0px;
   position:absolute;
-  left:42px;
+  left:0px;
   width:312px;
   height:374px;
 }
