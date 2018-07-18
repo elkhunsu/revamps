@@ -7325,18 +7325,18 @@
 #u299_img {
   border-width:0px;
   position:absolute;
-  left:0px;
+  left:-168px;
   top:0px;
-  width:315px;
   height:374px;
   border-radius: 5px
 }
 #u299 {
-  border-width:0px;
-  position:absolute;
-  left:-285px;
-  width:315px;
-  height:374px;
+  border-width: 0px;
+  position: absolute;
+  left: -281px;
+  width: 309px;
+  height: 374px;
+  overflow: hidden;
 }
 #u299_text {
   border-width:0px;
@@ -7453,7 +7453,7 @@
   border-width:0px;
   position:absolute;
   left:-274px;
-  width:200px;
+  width:300px;
   height:29px;
   top: 310px;
   font-family:'Montserrat-Bold', 'Montserrat Bold', 'Montserrat';
