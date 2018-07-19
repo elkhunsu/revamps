@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
     <head>
         <!-- meta start -->
@@ -48,7 +48,7 @@
                 </li>
 
                 <li class="logo-loop">
-                    <a href="http://loop.co.id">
+                    <a href="#">
                         <img class="img-logo" src="./assets/images/logo-loop.png" alt="loop.co.id youth digital portal">
                     </a>
                 </li>
@@ -58,7 +58,8 @@
                 </li>
                 <li class="notif-badge">
                     <a href="#" class="button-badge">
-                        <span class="badge alert" id="notif-count">1</span>
+                        <span class="badge normal"></span>
+                        <span class="badge alert" id="notif-count"></span>
                     </a>
                 </li>
                 <li class="users-sign">
@@ -76,18 +77,17 @@
                     <div class="overlay-content_notif">
                         <div class="tabbable-panel">
                             <div class="tabbable-line">
-                                <ul class="nav nav-tabs ">
-                                    <li class="active">
+                                <ul class="nav nav-tabs" id="tab-notif">
+                                    <li class="active" >
                                         <a href="#promos-content" data-toggle="tab">
                                             Promo <span class="badge notif-badge" id="notif-count_promos"></span></a>
                                     </li>
-                                    <li>
-                                        <a href="#activity-content" data-toggle="tab" id="notif-activity">
-                                            Aktivitas <span class="badge alert notif-badge" id="notif-activity_num">6</span></a>
+                                    <li >
+                                        <a href="#activity-content" data-toggle="tab" id="notif-activity" aria-expanded="false">Aktivitas <span class="badge notif-badge" id="notif-activity_num"></span></a>
                                     </li>
                                 </ul>
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="promos-content">
+                                <div class="tab-content" id="tab-notif_content">
+                                    <div class="tab-pane active" id="promos-content" >
                                         <div class="tab-box_promos">
                                             <div class="box-content_promos">
                                                 <div class="box-promos_content">
@@ -175,18 +175,7 @@
                                         <div class="btn btn-primary load-more">Aktivitas Lainnya</div>
                                     </div>
                                     <div class="tab-pane" id="activity-content">
-                                        <div class="tab-box_content">
-                                            <span class="title-activity"><span class="coin-loop_icon"></span>100 Koin Loopiah!</span>
-                                            <span class="content-activity">Selamat kamu mendapatkan 100 Koin LOOPiah dari login harian di loop.co.id</span>
-                                            <span class="time-activity"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 Maret 2018 14:15 WIB</span>
-                                        </div>
-                                        <div class="tab-box_content">
-                                            <span class="title-activity"><span class="coin-loop_icon"></span>100 Koin Loopiah!</span>
-                                            <span class="content-activity">Selamat kamu mendapatkan 100 Koin LOOPiah dari login harian di loop.co.id</span>
-                                            <span class="time-activity"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 Maret 2018 14:15 WIB</span>
-                                        </div>
-                                        <div class="btn btn-primary load-more">Aktivitas Lainnya</div>
-                                    </div>
+                                    </div>                                
                                 </div>
                             </div>
                         </div>
@@ -198,30 +187,67 @@
                         <li class="header-nav"></li>
                     </ul>
                     <div class="user-overlay_content">
-                        <div class="info-user">
-                            <div class="avatar_user">
-                                <span class="image-avatar"><img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"><span class="badge-level _level1"></span></span>
+                        <div class="user-non_login">
+                            <form class="form-horizontal">
+                            <fieldset>
+
+                            <!-- Form Name -->
+                            <legend>MASUK</legend>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="email">Email atau No. Handphone</label>  
+                              <div class="col-md-4">
+                              <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
+                                
+                              </div>
                             </div>
-                            <div class="name-user">
-                                <span>KIM JAEHA</span>
+
+                            <!-- Password input-->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="password">Kata Sandi</label>
+                              <div class="col-md-4">
+                                <input id="password" name="password" type="password" placeholder="" class="form-control input-md">
+                                
+                              </div>
                             </div>
-                            <div class="level-user">
-                                <span class="">Level 5 | Newbie</span>
+
+                            <!-- Button -->
+                            <div class="form-group">
+                              <div class="col-md-4">
+                                <button id="submit" name="submit" class="btn btn-primary btn-block custom-submit">MASUK</button>
+                              </div>
                             </div>
-                            <div class="poin-users">
-                                <div class="loopiah">
-                                    <span>LOOPiah Koin</span>
-                                    <span><span class="coin-loop_icon"></span> 53.200</span>
+
+                            </fieldset>
+                            </form>
+
+                            <div class="form-signup">
+                                <p>Belum punya akun? <span style="color: #81c1c5;font-weight: 800;font-size: 15px;">Daftar</span></p>
+                                <p>Lupa kata sandi? <span style="color: #81c1c5;font-weight: 800;font-size: 15px;">Perbaharui Kata Sandi</span></p>
+                            </div>
+                            <div class="line-through"><span>atau</span></div>
+                            <div class="social-media_login">
+                                <div style="text-align: center;margin-bottom: 2em;">Masuk dengan menggunakan</div>
+                                <div class="social_media">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-md-6">
+                                            <div class="btn sosmed btn-default btn-block"><img src="images/social-media/icon_google.png">Google</div>
+                                        </div>
+                                        <div class="col-xs-6 col-md-6">
+                                            <div class="btn btn-default btn-block sosmed"><img src="images/social-media/icon_fb.png">Facebook</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 col-md-6">
+                                            <div class="btn btn-default btn-block sosmed"><img src="images/social-media/icon_twitter.png">Twitter</div>
+                                        </div>
+                                        <div class="col-xs-6 col-md-6">
+                                            <div class="btn btn-default btn-block sosmed"><img src="images/social-media/icon_ig.png">Instagram</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="loopsquad">
-                                    <span>LOOPiah Koin</span>
-                                    <span><span class="coin-loop_icon"></span> 53.200</span>
-                                </div>
                             </div>
-                        </div>
-                        <div class="menu-users">
-                            <ul class="nav menu-users_nav" id="menu-user_nav">
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -234,18 +260,14 @@
                                         <div class="slide"><img class="slide-image" src="images/banner/banner_FIX1.jpg" /></div>
                                     </div>
                                     <div class="slide-wrapper">
-                                        <div class="slide"><img style="left: -115px;" class="slide-image" src="images/banner/banner_FIX2.jpg" /></div>
+                                        <div class="slide"><img style="left: -115px;" class="slide-image" src="images/banner/banner-sbmptn.jpg" /></div>
                                     </div>
                                     <div class="slide-wrapper">
-                                        <div class="slide"><img style="transform: translate3d(850px, -500px, 0px);" class="slide-image" src="images/banner/banner-sbmptn.jpg" /></div>
+                                        <div class="slide"><img style="transform: translate3d(850px, -500px, 0px);" class="slide-image" src="images/banner/banner-vaganza.jpg" /></div>
                                     </div>
                                     <div class="slide-wrapper">
-                                        <div class="slide"><img style="transform: translate3d(735px, -499px, 0px);" class="slide-image" src="images/banner/banner-vaganza.jpg" /></div>
+                                        <div class="slide"><img style="transform: translate3d(735px, -499px, 0px);" class="slide-image" src="images/banner/banner_ruang-guru.jpg" /></div>
                                     </div>
-                                    <div class="slide-wrapper">
-                                        <div class="slide"><img style="transform: translate3d(1700px, -1002px, 0px);" class="slide-image" src="images/banner/banner_ruang-guru.jpg" /></div>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
@@ -535,7 +557,7 @@
                                     <div id="u56" class="ax_default" data-label="Selain Nonton Piala">
                                         <div id="u56_div" class=""></div>
                                         <div id="u56_text" class="text ">
-                                            <p><span>Selain Nonton Piala Dunia 2018, Enggak Ada Salah…</span></p>
+                                            <p><span>Selain Nonton Piala Dunia 2018…</span></p>
                                         </div>
                                     </div>
 
@@ -653,7 +675,7 @@
                                     <div id="u79" class="ax_default" data-label="5 Fakta Pasangan Gam">
                                         <div id="u79_div" class=""></div>
                                         <div id="u79_text" class="text ">
-                                            <p><span>5 Fakta Pasangan Game</span></p><p><span>Of Thrones, Kit Haring…</span></p>
+                                            <p><span>5 Fakta Pasangan Game Of Thrones…</span></p>
                                         </div>
                                     </div>
 
@@ -758,15 +780,10 @@
 
                                     <!-- PROGRAM LAINNYA (Rectangle) -->
                                     <div id="u98" class="ax_default" data-label="PROGRAM LAINNYA">
-                                        <div id="u98_div" class=""></div>
+                                        <div id="u98_div"></div>
                                         <div id="u98_text" class="text ">
-                                            <p><span>PROGRAM LAINNYA</span></p>
+                                            <p><span style="text-decoration: underline;">PROGRAM LAINNYA</span></p>
                                         </div>
-                                    </div>
-
-                                    <!-- Line 2 (Shape) -->
-                                    <div id="u99" class="ax_default shape" data-label="Line 2">
-                                        <img id="u99_img" class="img " src="images/mobile/line_2_u99.png"/>
                                     </div>
                                 </div>
 
@@ -856,15 +873,15 @@
                                 </div>
 
                                 <!-- loopkita_ (Image) -->
-                                <div id="u129" class="ax_default image" data-label="loopkita_">
+                                <div id="u129" class="ax_default image" data-label="loopkita_" data-aos="zoom">
                                     <img id="u129_img" class="img " src="images/mobile/loopkita__u129.png"/>
                                 </div>
 
                                 <!-- google-play-download-android-app (Group) -->
-                                <div id="u131" class="ax_default" data-label="google-play-download-android-app" data-left="113" data-top="5129" data-width="182" data-height="59">
+                                <div id="u131" class="ax_default" >
 
                                     <!-- Shape (Shape) -->
-                                    <div id="u132" class="ax_default shape" data-label="Shape">
+                                    <div id="u132" class="ax_default shape" data-label="Shape" data-aos="zoom">
                                         <img id="u132_img" class="img " src="images/mobile/shape_u132.png"/>
                                     </div>
                                 </div>
@@ -873,7 +890,7 @@
                                 <div id="u148" class="ax_default" data-label="Jadi,tunggu apalagi?" data-aos="zoom-out">
                                     <div id="u148_div" class=""></div>
                                     <div id="u148_text" class="text ">
-                                        <p><span>Jadi,tunggu apalagi? Gabung dan jadi yang </span></p><p><span>paling update bareng Loop! Yes, I want to be a LOOPER!</span></p>
+                                        <p><span>Jadi,tunggu apalagi? Gabung dan jadi yang paling update bareng Loop! Yes, I want to be a LOOPER!</span></p>
                                     </div>
                                 </div>
 
@@ -920,7 +937,7 @@
                                 <div class="testimonial_section">
                                     <div class="card_testi">
                                         <div class="user_testi">
-                                            <span style="font-size: 100px;">“</span>
+                                            <span style="font-size: 100px;color: red;">“</span>
                                             <span class="testi-text">Menurut aku, event LOOP KePo tuh udah paket lengkap, gak cuma seru-seruan dan bagi-bagi hadiah doang, tapi ada muatan positifnya juga. Pastinya cocok banget buat anak muda kayak kita yang lagi pengen eksis.</span>
                                         </div>
                                         <div class="testi-profile">
@@ -929,196 +946,15 @@
                                             <span class="testi-member">LOOP KePo Member</span>
                                         </div>
                                     </div>
-                                </div>
-
-                                <!-- Group 23 (Group) -->
-                                <div id="u156" class="ax_default">
-
-                                    <!-- Group 18 (Group) -->
-                                    <div id="u157" class="ax_default">
-
-                                        <!-- Group 17 (Group) -->
-                                        <div id="u161" class="ax_default">
-
-                                            <!-- LOOP KePo Mentor (Rectangle) -->
-                                            <div id="u162" class="ax_default" data-label="LOOP KePo Mentor">
-                                                <div id="u162_div" class=""></div>
-                                                <div id="u162_text" class="text ">
-                                                    <p><span>LOOP KePo Mentor</span></p>
-                                                </div>
-                                            </div>
-
-                                            <!-- Jane Roe (Rectangle) -->
-                                            <div id="u163" class="ax_default" data-label="Jane Roe">
-                                                <div id="u163_div" class=""></div>
-                                                <div id="u163_text" class="text ">
-                                                    <p><span>Jane Roe</span></p>
-                                                </div>
-                                            </div>
+                                    <div class="card_testi" style="left: 360px;">
+                                        <div class="user_testi">
+                                            <span style="font-size: 100px;color: red;">“</span>
+                                            <span class="testi-text">Bukan cuma dapat teman baru, ikutan LOOP Squad juga ternyata bisa bikin aku menangin hadiah jalan-jalan ke Singapore! Hadiahnya beneran, gak pake bohong!</span>
                                         </div>
-
-                                        <!-- Menurut aku, event L (Rectangle) -->
-                                        <div id="u164" class="ax_default">
-                                            <div id="u164_div" class=""></div>
-                                            <div id="u164_text" class="text ">
-                                                <p><span>Menurut aku, event LOOP KePo tuh udah paket lengkap, gak cuma seru-seruan dan bagi-bagi hadiah doang, tapi ada muatan positifnya juga. Pastinya cocok banget buat anak muda kayak kita yang lagi pengen eksis.</span></p>
-                                            </div>
-                                        </div>
-
-                                        <!-- “ (Rectangle) -->
-                                        <div id="u165" class="ax_default" data-label="“">
-                                            <div id="u165_div" class=""></div>
-                                            <div id="u165_text" class="text ">
-                                                <p><span>“</span></p>
-                                            </div>
-                                        </div>
-
-                                        <!-- 00192095 (Group) -->
-                                        <div id="u166" class="ax_default" data-label="00192095" data-left="-267" data-top="5767" data-width="70" data-height="67">
-
-                                            <!-- Mask (Shape) -->
-                                            <div id="u167" class="ax_default shape" data-label="Mask">
-                                                <img id="u167_img" class="img " src="images/mobile/mask_u167.png"/>
-                                            </div>
-
-                                            <!-- 00192095 (Image) -->
-                                            <div id="u168" class="ax_default image" data-label="00192095">
-                                                <img id="u168_img" class="img " src="images/mobile/00192095_u168.png"/>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Group 18 Copy (Group) -->
-                                    <div id="u169" class="ax_default">
-
-                                        <!-- BOX-CARD (Group) -->
-                                        <div id="u170" class="ax_default" data-label="BOX-CARD" data-left="22" data-top="5437" data-width="303" data-height="433">
-
-                                            <!-- Group 10 (Group) -->
-                                            <div id="u171" class="ax_default" data-label="Group 10" data-left="22" data-top="5437" data-width="303" data-height="433">
-
-                                                <!-- Mask (Rectangle) -->
-                                                <div id="u172" class="ax_default" data-label="Mask">
-                                                    <div id="u172_div" class=""></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Group 17 (Group) -->
-                                        <div id="u173" class="ax_default" data-label="Group 17" data-left="125" data-top="5768" data-width="162" data-height="58">
-
-                                            <!-- Pemenang Short Vacat (Rectangle) -->
-                                            <div id="u174" class="ax_default" data-label="Pemenang Short Vacat">
-                                                <div id="u174_div" class=""></div>
-                                                <div id="u174_text" class="text ">
-                                                    <p><span>Pemenang Short Vacation </span></p><p><span>ke SingapuraLOOP Squad 2016</span></p>
-                                                </div>
-                                            </div>
-
-                                            <!-- Jane Doe (Rectangle) -->
-                                            <div id="u175" class="ax_default" data-label="Jane Doe">
-                                                <div id="u175_div" class=""></div>
-                                                <div id="u175_text" class="text ">
-                                                    <p><span>Jane Doe</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Bukan cuma dapat tem (Rectangle) -->
-                                        <div id="u176" class="ax_default" data-label="Bukan cuma dapat tem">
-                                            <div id="u176_div" class=""></div>
-                                            <div id="u176_text" class="text ">
-                                                <p><span>Bukan cuma dapat teman baru, ikutan LOOP Squad juga ternyata bisa bikin aku menangin hadiah jalan-jalan ke Singapore! Hadiahnya beneran, gak pake bohong!</span></p>
-                                            </div>
-                                        </div>
-
-                                        <!-- “ (Rectangle) -->
-                                        <div id="u177" class="ax_default" data-label="“">
-                                            <div id="u177_div" class=""></div>
-                                            <div id="u177_text" class="text ">
-                                                <p><span>“</span></p>
-                                            </div>
-                                        </div>
-
-                                        <!-- 00192095 (Group) -->
-                                        <div id="u178" class="ax_default" data-label="00192095" data-left="43" data-top="5763" data-width="76" data-height="74">
-
-                                            <!-- Mask (Shape) -->
-                                            <div id="u179" class="ax_default shape" data-label="Mask">
-                                                <img id="u179_img" class="img " src="images/mobile/mask_u167.png"/>
-                                            </div>
-
-                                            <!-- rawpixel-442649-unsplash (Image) -->
-                                            <div id="u180" class="ax_default image" data-label="rawpixel-442649-unsplash">
-                                                <img id="u180_img" class="img " src="images/mobile/rawpixel-442649-unsplash_u180.png"/>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Group 18 Copy 3 (Group) -->
-                                    <div id="u181" class="ax_default">
-
-                                        <!-- BOX-CARD (Group) -->
-                                        <div id="u182" class="ax_default" data-label="BOX-CARD" data-left="337" data-top="5437" data-width="303" data-height="433">
-
-                                            <!-- Group 10 (Group) -->
-                                            <div id="u183" class="ax_default" data-label="Group 10" data-left="337" data-top="5437" data-width="303" data-height="433">
-
-                                                <!-- Mask (Rectangle) -->
-                                                <div id="u184" class="ax_default" data-label="Mask">
-                                                    <div id="u184_div" class=""></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Group 17 (Group) -->
-                                        <div id="u185" class="ax_default" data-label="Group 17" data-left="439" data-top="5768" data-width="104" data-height="46">
-
-                                            <!-- LOOP KePo Mentor (Rectangle) -->
-                                            <div id="u186" class="ax_default" data-label="LOOP KePo Mentor">
-                                                <div id="u186_div" class=""></div>
-                                                <div id="u186_text" class="text ">
-                                                    <p><span>LOOP KePo Mentor</span></p>
-                                                </div>
-                                            </div>
-
-                                            <!-- Jane Roe (Rectangle) -->
-                                            <div id="u187" class="ax_default" data-label="Jane Roe">
-                                                <div id="u187_div" class=""></div>
-                                                <div id="u187_text" class="text ">
-                                                    <p><span>Jane Roe</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Menurut aku, event L (Rectangle) -->
-                                        <div id="u188" class="ax_default" data-label="Menurut aku, event L">
-                                            <div id="u188_div" class=""></div>
-                                            <div id="u188_text" class="text ">
-                                                <p><span>Menurut aku, event LOOP KePo tuh udah paket lengkap, gak cuma seru-seruan dan bagi-bagi hadiah doang, tapi ada muatan positifnya juga. Pastinya cocok banget buat anak muda kayak kita yang lagi pengen eksis.</span></p>
-                                            </div>
-                                        </div>
-
-                                        <!-- “ (Rectangle) -->
-                                        <div id="u189" class="ax_default" data-label="“">
-                                            <div id="u189_div" class=""></div>
-                                            <div id="u189_text" class="text ">
-                                                <p><span>“</span></p>
-                                            </div>
-                                        </div>
-
-                                        <!-- 00192095 (Group) -->
-                                        <div id="u190" class="ax_default" data-label="00192095" data-left="363" data-top="5766" data-width="70" data-height="68">
-
-                                            <!-- Mask (Shape) -->
-                                            <div id="u191" class="ax_default shape" data-label="Mask">
-                                                <img id="u191_img" class="img " src="images/mobile/mask_u167.png"/>
-                                            </div>
-
-                                            <!-- 00192095 (Image) -->
-                                            <div id="u192" class="ax_default image" data-label="00192095">
-                                                <img id="u192_img" class="img " src="images/mobile/00192095_u168.png"/>
-                                            </div>
+                                        <div class="testi-profile">
+                                            <span class="testi-photo"><img id="u168_img" class="img " src="images/mobile/rawpixel-442649-unsplash_u180.png"></span>
+                                            <span class="testi-name">Jane Roe</span>
+                                            <span class="testi-member">LOOP KePo Member</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1234,96 +1070,7 @@
 
                                             <!-- Oval (Shape) -->
                                             <div id="u211" class="ax_default shape" data-label="Oval">
-                                                <img id="u211_img" class="img " src="images/mobile/oval_u211.png"/>
-                                            </div>
-
-                                            <!-- Shape (Shape) -->
-                                            <div id="u212" class="ax_default shape" data-label="Shape">
-                                                <img id="u212_img" class="img " src="images/mobile/shape_u212.png"/>
-                                            </div>
-                                        </div>
-
-                                        <!-- 003-twitter (Group) -->
-                                        <div id="u213" class="ax_default" data-label="003-twitter" data-left="133" data-top="6568" data-width="30" data-height="30">
-
-                                            <!-- Oval (Shape) -->
-                                            <div id="u214" class="ax_default shape" data-label="Oval">
-                                                <img id="u214_img" class="img " src="images/mobile/oval_u211.png"/>
-                                            </div>
-
-                                            <!-- Shape (Shape) -->
-                                            <div id="u215" class="ax_default shape" data-label="Shape">
-                                                <img id="u215_img" class="img " src="images/mobile/shape_u215.png"/>
-                                            </div>
-                                        </div>
-
-                                        <!-- 001-instagram (Group) -->
-                                        <div id="u216" class="ax_default" data-label="001-instagram" data-left="172" data-top="6568" data-width="30" data-height="30">
-
-                                            <!-- Oval 2 (Shape) -->
-                                            <div id="u217" class="ax_default shape" data-label="Oval 2">
-                                                <img id="u217_img" class="img " src="images/mobile/oval_2_u217.png"/>
-                                            </div>
-
-                                            <!-- Shape (Shape) -->
-                                            <div id="u218" class="ax_default shape" data-label="Shape">
-                                                <img id="u218_img" class="img " src="images/mobile/shape_u218.png"/>
-                                            </div>
-
-                                            <!-- Shape (Shape) -->
-                                            <div id="u219" class="ax_default shape" data-label="Shape">
-                                                <img id="u219_img" class="img " src="images/mobile/shape_u219.png"/>
-                                            </div>
-
-                                            <!-- Shape (Shape) -->
-                                            <div id="u220" class="ax_default shape" data-label="Shape">
-                                                <img id="u220_img" class="img " src="images/mobile/shape_u220.png"/>
-                                            </div>
-                                        </div>
-
-                                        <!-- line logo (Group) -->
-                                        <div id="u221" class="ax_default" data-label="line logo" data-left="209" data-top="6568" data-width="30" data-height="30">
-
-                                            <!-- Shape (Shape) -->
-                                            <div id="u222" class="ax_default shape" data-label="Shape">
-                                                <img id="u222_img" class="img " src="images/mobile/oval_u211.png"/>
-                                            </div>
-
-                                            <!-- line-logo (Group) -->
-                                            <div id="u223" class="ax_default" data-label="line-logo" data-left="214" data-top="6574" data-width="20" data-height="20">
-
-                                                <!-- Shape (Shape) -->
-                                                <div id="u224" class="ax_default shape" data-label="Shape">
-                                                    <img id="u224_img" class="img " src="images/mobile/shape_u224.png"/>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- youtube (Group) -->
-                                        <div id="u225" class="ax_default" data-label="youtube" data-left="246" data-top="6568" data-width="30" data-height="30">
-
-                                            <!-- Shape Copy (Shape) -->
-                                            <div id="u226" class="ax_default shape" data-label="Shape Copy">
-                                                <img id="u226_img" class="img " src="images/mobile/oval_u211.png"/>
-                                            </div>
-
-                                            <!-- Shape (Shape) -->
-                                            <div id="u227" class="ax_default shape" data-label="Shape">
-                                                <img id="u227_img" class="img " src="images/mobile/shape_u227.png"/>
-                                            </div>
-                                        </div>
-
-                                        <!-- 002-linkedin (Group) -->
-                                        <div id="u228" class="ax_default" data-label="002-linkedin" data-left="286" data-top="6568" data-width="30" data-height="30">
-
-                                            <!-- Oval (Shape) -->
-                                            <div id="u229" class="ax_default shape" data-label="Oval">
-                                                <img id="u229_img" class="img " src="images/mobile/oval_u211.png"/>
-                                            </div>
-
-                                            <!-- Shape (Shape) -->
-                                            <div id="u230" class="ax_default shape" data-label="Shape">
-                                                <img id="u230_img" class="img " src="images/mobile/shape_u230.png"/>
+                                                <img id="u211_img" class="img " src="images/mobile/sosmed.png"/>
                                             </div>
                                         </div>
                                     </div>
@@ -1402,25 +1149,25 @@
                                     </div>
                                 </div>
 
-                                <div class="loopiah-group" id="loopiah-group">
+                                <div class="loopiah-group" id="loopiah-group" >
                                     <!-- loopiah (Group) -->
-                                    <div id="u118" class="ax_default">
+                                    <div id="u118" class="ax_default" >
 
                                         <!-- Mask Copy 2 (Rectangle) -->
                                         <div id="u119" class="ax_default" data-label="Mask Copy 2">
-                                            <div id="u119_div" class=""></div>
+                                            <div id="u119_div" class="" data-aos="zoom"></div>
                                         </div>
 
                                         <!-- Aktif di loop.co.id (Rectangle) -->
-                                        <div id="u120" class="ax_default" data-label="Aktif di loop.co.id">
-                                            <div id="u120_div" class=""></div>
+                                        <div id="u120" class="ax_default" data-label="Aktif di loop.co.id" data-aos="zoom">
+                                            <div id="u120_div" class="" ></div>
                                             <div id="u120_text" class="text ">
                                                 <p><span>Aktif di loop.co.id bisa buat kamu dapatkan MacBook Pro 13”, Samsung Galaxy S8, Samsung Galaxy A5 dan banyak voucher menarik lainnya loh! Mau?</span></p>
                                             </div>
                                         </div>
 
                                         <!-- Group (Group) -->
-                                        <div id="u121" class="ax_default" data-label="Group" data-left="104" data-top="4355" data-width="202" data-height="57">
+                                        <div id="u121" class="ax_default" >
 
                                             <!-- Rectangle 3 (Rectangle) -->
                                             <div id="u122" class="ax_default" data-label="Rectangle 3">
@@ -1445,7 +1192,7 @@
                                         <div id="u125" class="ax_default" data-label="Seru dan banyak hadi">
                                             <div id="u125_div" class=""></div>
                                             <div id="u125_text" class="text ">
-                                                <p><span>Seru dan banyak hadiah</span></p>
+                                                <p><span>Seru dan Banyak Hadiah</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -1454,23 +1201,43 @@
 
                                 <!-- Group 25 (Group) -->
                                 <div class="beli-paket_box" >
-                                    <div class="card-beli_paket">
+                                    <div class="card-beli_paket_2" data-aos="fade-left">
                                         <div class="content-card">
                                             <div class="box-popular"><span class="icon-popular"><i class="fa fa-star" aria-hidden="true" style="font-size: 13px"></i></span>BEST DEAL</div>
                                             <div class="card-paket_content">Kuota internetan melimpah, 24 jam tanpa bagi-bagi! hanya di 25 Mei 2018</div>
                                             <div class="harga"><strike style="color: #aeaeae; margin-right: 9px;">Rp. 100.000</strike>Rp. 90.0000</div>
+                                            <div class="paket-name">SUPER DEAL</div>
+                                            <div class="data-nominal">25GB</div>
+                                            <button class="btn btn-primary -orange">BELI PAKET</button>
+                                        </div>
+                                    </div>
+                                    <div class="card-beli_paket_3" data-aos="fade-left">
+                                        <div class="content-card">
+                                            <div class="box-popular"><span class="icon-popular"><img class="img" src="images/mobile/fill_1_u293.png"></span>POPULAR</div>
+                                            <div class="card-paket_content">Main game kesukaanmu tanpa nge-lag hanya dengan</div>
+                                            <div class="harga"><span><img class="img " src="images/mobile/shape_u266.png" style="margin-right: 5px;"></span>Rp. 20.0000</div>
                                             <div class="paket-name">LOOP GAME</div>
                                             <div class="data-nominal">3GB</div>
                                             <button class="btn btn-primary -orange">BELI PAKET</button>
                                         </div>
                                     </div>
-                                    <div class="card-beli_paket_2">
+                                    <div class="card-beli_paket_4" data-aos="fade-left">
                                         <div class="content-card">
-                                            <div class="box-popular"><span class="icon-popular"><img class="img" src="images/mobile/fill_1_u293.png"></span>POPULAR</div>
-                                            <div class="card-paket_content">Main game kesukaanmu tanpa nge-lag hanya dengan</div>
-                                            <div class="harga"><span><img class="img " src="images/mobile/shape_u266.png"></span>Rp. 20.0000</div>
-                                            <div class="paket-name">LOOP GAME</div>
+                                            <div class="box-popular"><span class="icon-popular"><img class="img" src="images/black-shop-tag.png"></span>PROMO</div>
+                                            <div class="card-paket_content">Bebas internetan 24 jam di semua jaringan</div>
+                                            <div class="harga"><span style="color: #9B9B9B;font-weight: 400;">Mulai dari </span>Rp. 25.0000</div>
+                                            <div class="paket-name">INTERNET VAGANZA</div>
                                             <div class="data-nominal">3GB</div>
+                                            <button class="btn btn-primary -orange">BELI PAKET</button>
+                                        </div>
+                                    </div>
+                                    <div class="card-beli_paket" data-aos="fade-left">
+                                        <div class="content-card">
+                                            <div class="box-popular"><span class="icon-popular"><img class="img" src="images/wallet.png"></span>CASHBACK</div>
+                                            <div class="card-paket_content">Beli paket internet bisa nambah uang jajan</div>
+                                            <div class="harga"><span style="color: #9B9B9B;font-weight: 400;">Mulai dari </span>Rp. 45.0000</div>
+                                            <div class="paket-name">LOOP CASH</div>
+                                            <div class="data-nominal">5GB</div>
                                             <button class="btn btn-primary -orange">BELI PAKET</button>
                                         </div>
                                     </div>
@@ -1483,34 +1250,10 @@
                                     <div id="u251" class="ax_default" data-label="Rectangle 13">
                                         <div id="u251_div" class=""></div>
                                     </div>
-
-                                    <!-- Group (Group) -->
-                                    <div id="u252" class="ax_default" data-label="Group" data-left="-34" data-top="2001" data-width="513" data-height="308">
-
-                                        <!-- Asset 4@72x (Image) -->
-                                        <div id="u253" class="ax_default image" data-label="Asset 4@72x">
-                                            <img id="u253_img" class="img " src="images/mobile/asset_4_72x_u20.png"/>
-                                        </div>
-
-                                        <!-- Asset 4@72x Copy 2 (Image) -->
-                                        <div id="u254" class="ax_default image" data-label="Asset 4@72x Copy 2">
-                                            <img id="u254_img" class="img " src="images/mobile/asset_4_72x_u20.png"/>
-                                        </div>
-
-                                        <!-- Asset 4@72x Copy (Image) -->
-                                        <div id="u255" class="ax_default image" data-label="Asset 4@72x Copy">
-                                            <img id="u255_img" class="img " src="images/mobile/asset_4_72x_u20.png"/>
-                                        </div>
-
-                                        <!-- Asset 4@72x Copy 3 (Image) -->
-                                        <div id="u256" class="ax_default image" data-label="Asset 4@72x Copy 3">
-                                            <img id="u256_img" class="img " src="images/mobile/asset_4_72x_u20.png"/>
-                                        </div>
-                                    </div>
                                 </div>
 
                                 <!-- Group 24 (Group) -->
-                                <div id="u295" class="ax_default">
+                                <div id="u295" class="ax_default" data-aos="fade-left">
 
                                     <!-- Group 15 (Group) -->
                                     <div id="u296" class="ax_default">
@@ -1524,9 +1267,6 @@
                                             </div>
 
                                             <!-- julian-gentilezza-414681-unsplash (Image) -->
-                                            <div id="u299" class="ax_default image" data-label="julian-gentilezza-414681-unsplash">
-                                                <img id="u299_img" class="img " src="images/mobile/julian-gentilezza-414681-unsplash_u299.png"/>
-                                            </div>
                                         </div>
 
                                         <!-- Group 2 (Group) -->
@@ -1550,7 +1290,34 @@
                                         <div id="u303" class="ax_default" data-label="I LOOP RUN 2018">
                                             <div id="u303_div" class=""></div>
                                             <div id="u303_text" class="text ">
-                                                <p><span>I LOOP RUN 2018</span></p>
+                                                <p><span>LOOP NGABUBUHITS</span></p>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Group 9 (Group) -->
+                                        <div id="u317" class="ax_default">
+
+                                            <!-- Rectangle 10 (Rectangle) -->
+                                            <div id="u318_2" class="ax_default" data-label="Rectangle 10">
+                                                <div id="u318_div" class=""></div>
+                                            </div>
+
+                                            <!-- Group 4 (Group) -->
+                                            <div id="u319" class="ax_default" data-label="Group 4" data-left="276" data-top="3312" data-width="56" data-height="14">
+
+                                                <!-- Ongoing (Rectangle) -->
+                                                <div id="u320_2" class="ax_default" data-label="Ongoing">
+                                                    <div id="u320_div" class=""></div>
+                                                    <div id="u320_text" class="text ">
+                                                        <p><span>ONGOING</span></p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Oval 4 (Shape) -->
+                                                <div id="u321_2" class="ax_default shape" data-label="Oval 4">
+                                                    <img id="u321_img" class="img " src="images/mobile/oval_4_u321.png"/>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1609,17 +1376,13 @@
                                                 <div id="u314_div" class=""></div>
                                             </div>
 
-                                            <!-- 17-Penampilan-zetizen-babruit (Image) -->
-                                            <div id="u315" class="ax_default image" data-label="17-Penampilan-zetizen-babruit">
-                                                <img id="u315_img" class="img " src="images/loop/loop_ngabubuhits.gif"/>
-                                            </div>
                                         </div>
 
                                         <!-- LOOP NGABUBUHITS (Rectangle) -->
                                         <div id="u316" class="ax_default" data-label="LOOP NGABUBUHITS">
                                             <div id="u316_div" class=""></div>
                                             <div id="u316_text" class="text ">
-                                                <p><span>LOOP NGABUBUHITS</span></p>
+                                                <p><span>I LOOP RUN 2018</span></p>
                                             </div>
                                         </div>
 

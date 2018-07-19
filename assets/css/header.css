@@ -1,74 +1,3 @@
-html, body{
-    margin: 0;
-    padding: 0;
-    background: #f5f5f5;
-    -webkit-overflow-scrolling: touch;
-    font-size: 12px
-}
-
-.body-overflow-no-scroll{
-    position: absolute;
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
-    max-width: 100%;
-    width: 100%;
-}
-.main{
-    background: #EAEAF1;
-    color: #333332;
-    height: 100%;
-    -webkit-transition: -webkit-transform .2s cubic-bezier(0.2, 0.3, 0.25, 0.9);/* let the container move smoothly*/
-    -moz-transition: -moz-transform .2s cubic-bezier(0.2, 0.3, 0.25, 0.9);/* let the container move smoothly*/
-    transition: transform .2s cubic-bezier(0.2, 0.3, 0.25, 0.9);/* let the container move smoothly*/
-}
-
-.nav-content{
-    display: flex;
-    padding: 10px 16px 6px 16px;
-    /*    height: 48px;*/
-    margin: 0 auto;
-    width: 100%;
-    box-shadow: 0 5px 16px -9px #000000;
-}
-.nav-content.scroll{
-    height: 48px;
-    transition: height 0.25s ease-in;
-}
-.main-navigation{
-    background: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 999
-}
-
-.main-navigation.open{
-    position: unset;
-    overflow: hidden;
-}
-
-.main-navigation.open .nav-content{
-    margin-left: 288px;
-
-}
-
-.main-navigation.open > ul > li{
-    /*
-      flex-grow: 1;
-      flex-shrink: 1;
-       set value for the flex basis, the two properties above will evenly 
-      divide the space. 
-      flex-basis: 20px;
-    
-      -webkit-flex-grow: 1;
-      -webkit-flex-shrink: 1;
-    */
-    margin: 5px;
-    overflow: hidden;
-    padding-left: 15px;
-}
-
 #burger-menu{
     width: 22px;
     margin-top: 7px;
@@ -404,21 +333,6 @@ ul.menu-users_nav li:last-child{
     font-size: 20px;
     height: 65px;
     line-height: 44px;
-}
-
-#menu-sidebar{
-    margin-top: 30px;
-    font-size: 16px;
-    font-family: 'Lato-Regular', 'Lato';
-    font-weight: 400;
-}
-
-#main{
-    transition: margin-left .5s;
-}
-.content-main{
-    background: aqua;
-    /*margin-top: 70px;*/
 }
 .red-menu_nav{
     display: block !important;
@@ -908,20 +822,4 @@ legend{
 @media screen and (max-width: 450px) {
     .site-nav {padding-top: 15px;}
     .site-nav a {font-size: 18px;}
-}
-
-@media screen and (max-width: 480px){
-    #sidebar-wrapper.open{
-        width: 285px
-    }
-    #main.open{
-        margin-left: 286px;
-        overflow: hidden;
-    }
-    .content-main.open{
-        overflow: hidden;
-        height: 551px;
-        margin-left: 30px;
-        margin-top: 0px
-    }
 }
