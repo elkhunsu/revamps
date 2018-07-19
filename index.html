@@ -13,7 +13,7 @@
         <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
         <link href="data/styles.css" type="text/css" rel="stylesheet"/>
         <link href="assets/css/body.css" type="text/css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link preload href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
         <!-- Bootstrap and Other CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -249,7 +249,7 @@
                     </div>
                 </div>
                 <div class="content-main">
-                    <section class="slider-wrap" style="z-index: 9">
+                    <section class="slider-wrap"    >
                         <div class="slider" id="slider">
                             <div class="holder">
                                 <div class="slide-wrapper">
@@ -271,18 +271,21 @@
                         </div>
                     </section>
                     <section class="intro">
-                        <div class="intro_text">
+                        <img src="images/mobile/asset_3_72x_u4.png">
+                        <div class="intro_text" data-aos="zoom">
                             <div class="header_intro">
                                 <h4>Kepoin Disini</h4>
                             </div>
                             <div class="content_header">  LOOP itu kartu perdana kita-kita! Di sini kamu bisa beli kartu perdana-mu, dan untuk kamu yang udah pake LOOP, pilih paket internet yang kamu mau!</div>
                         </div>
                         <div class="box_intro">
-                            <div class="box_kartu-1">
-                                
+                            <div class="box_kartu-1" data-aos="fade-left">
+                                <img src="images/mobile/asset_4_72x_u200.png">
+                                <div class="title-box">Kartu Perdana</div>
                             </div>
-                            <div class="box_kartu-2">
-                                
+                            <div class="box_kartu-2" data-aos="fade-right">
+                                <img src="images/mobile/asset_6_u196.png">
+                                <div class="title-box">Paket Internet</div>
                             </div>
                         </div>
                     </section>
@@ -375,11 +378,13 @@
                     </section>
                     <section class="promo-loop">
                         <div class="box-promo-loop">
-                            
                         </div>
                     </section>
                     <section class="apps-loop_kita">
-                        
+                        <div class="header-loop-kita">
+                            <h3>Hemat (Kuota) Pangkal Kaya</h3>
+                            <h4>Mau punya aplikasi yang ngasih kamu diskon setiap beli paket internet!, Bisa hemat kuota supaya nggak boros dan jadi yang paling up to date? Download aplikasi LOOPKita di Google PlayStore sekarang!</h4>
+                        </div>
                     </section>
                 </div>
             </div> <!-- main -->
@@ -419,8 +424,8 @@
         <script type="text/javascript">
             $('.scroolBottom').click(function () {
                 $('html,body').animate({
-                    scrollTop: $("#u93_img").
-                            offset().top + $('#u93_img').outerHeight(true) - $(window).height()
+                    scrollTop: $("section.intro").
+                            offset().top + $('section.intro').outerHeight(true) - $(window).height() - 50
                 },
                         'slow');
             });

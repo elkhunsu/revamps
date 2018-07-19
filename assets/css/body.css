@@ -176,7 +176,8 @@ body {
 .slider-wrap {
   width: 414px;
   height: 758px;
-  left: 50%;
+  z-index: 1;
+  position: relative;
 }
 
 .slider {
@@ -478,6 +479,16 @@ section.intro{
     height: 742px;
     margin-left: auto;
     text-align: center;
+    background: url(../../images/mobile/path_24_u13.png) no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    overflow: hidden;
+}
+.intro img{
+    right: 130px;
+    bottom: 470px;
+    /*opacity: 0.4;*/
+    position: absolute;
 }
 .intro_text{
     width: 100%;
@@ -492,6 +503,19 @@ section.intro{
     padding: 17px;
     top: 18rem;
 }
+.header_intro h4{
+    font-family: 'Montserrat-Bold', 'Montserrat Bold', 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+}
+.content_header{
+      font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
 .box_kartu-1, .box_kartu-2{
   position: absolute;
     width: 382px;
@@ -504,6 +528,29 @@ section.intro{
 }
 .box_kartu-2{
   top: 21rem;
+}
+.box_kartu-1 img{
+  position: absolute;
+  width: 162px;
+  left: 28px;
+  top: 10px;
+}
+.box_kartu-2 img{
+    width: 162px;
+    position: absolute;
+    left: 29px;
+    top: 7px;
+}
+.box_kartu-1 .title-box, .box_kartu-2 .title-box{
+    font-family: 'Lato-Bold', 'Lato Bold', 'Lato';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #4A4A4A;
+    margin: 0 auto;
+    position: absolute;
+    right: 46px;
+    top: 60px;
 }
 section.beli-paket{
   position: relative;
@@ -581,14 +628,14 @@ section.program-loop{
 .box-program._second{
     left: 340px;
     right: 0px;
-    background: url(../../images/loop/loop_ngabubuhits.gif) no-repeat;
+    background: url('../../images/mobile/julian-gentilezza-414681-unsplash_u299.png') no-repeat;
     background-position-x: center;
     background-size: cover;
 }
 .box-program._third{
     left: 670px;
     right: 0px;
-    background: url(../../images/loop/loop_ngabubuhits.gif) no-repeat;
+    background: url('../../images/loop/ilooprun2017.gif') no-repeat;
     background-position-x: center;
     background-size: cover;
 }
@@ -622,8 +669,10 @@ section.promo-loop{
   box-shadow: 0px 10px 22px rgba(254, 45, 67, 0.2);
 }
 section.apps-loop_kita{
+  background: url('../../images/mobile/loopkita__u129.png') no-repeat;
   height: 694px;
-  
+  background-position: bottom;
+  background-size: contain;
 }
 section.testimonial{
   height: 796px;
