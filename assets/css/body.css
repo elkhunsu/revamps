@@ -617,20 +617,207 @@ section.artikel{
     margin-left: 16px;
     margin-top: 13px;
 }
-.box-arikel{
+.box-artikel{
+  position: relative;
   height: 239px;
   width: 383px;
   margin-bottom: 15px;
-  background-color: red;
+  background-color: #f44336;
+  border-radius: 4px;
+  -moz-box-shadow:0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
+  -webkit-box-shadow:0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
+  border-radius: 4px;
+}
+img.main-artikel_img{
+  width: inherit;
+  height: inherit;
+  opacity: .3;
+  border-radius: 4px;
+}
+.artikel-tag{
+    width: 89px;
+    height: 24px;
+    background: inherit;
+    background-color: rgba(0, 84, 170, 1);
+    border: none;
+    border-radius: 4px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    position: absolute;
+    left: 16px;
+    top: 17px;
+    padding: 2px;
+    color: white;
+}
+.artikel-tag span{
+    font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    width: 43px;
+}
+.title-artikel{
+    position: absolute;
+    width: 299px;
+    top: 51px;
+    left: 17px;
+    color: #ffffff
+}
+.title-artikel span{
+  font-family: 'Lato-Bold', 'Lato Bold', 'Lato';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: left;
+  line-height: 20px;
+}
+.wrap-artikel_comment{
+  position: absolute;
+  top: 123px;
+  left: 17px;
+  width: 100px;
+}
+.wrap-artikel_comment span{
+  font-family: 'Lato-Regular', 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  color: #FFFFFF;
+  text-align: left;
+}
+.like-artikel{
+  position: absolute;
+  width: 35px;
+}
+.comment-artikel{
+  position: absolute;
+  left: 40px;
+}
+.subtitle-artikel{
+    position: absolute;
+    top: 152px;
+    left: 17px;
+    width: 189px;
+}
+.subtitle-artikel span{
+    font-family: 'Lato-Italic', 'Lato Italic', 'Lato';
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.870588235294118);
+  text-align: left;
+}
+.mini-box_artikel-container{
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    left: -6px;
+    position: relative;
 }
 .mini-box_artikel{
-    width: 187px;
+    background: tomato;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    width: 185px;
     height: 187px;
+    margin: 5px;
     background-color: white;
-    position: absolute;
+    -moz-box-shadow: 0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
+    border-radius: 4px;
+    overflow: hidden;
 }
-.mini-box_artikel._mini2{
-  right: 14px
+.mini-box_artikel .content-box{
+    border-width: 0px;
+    position: relative;
+    top: -40px;
+    width: 167px;
+    height: 105px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 10px;
+    color: black
+}
+.mini-box_artikel .main-image{
+  height: 116px;
+  width: 190px;
+}
+.mini-box_artikel .main-image img{
+  width: 100%
+}
+.mini-box_artikel .content-box .title-artikel{
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 153px;
+    line-height: 20px;
+    text-align: left;
+    height: 60px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    line-height: 0px;
+    top: 25px;
+    left: 11px;
+    /*white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mini-box_artikel .content-box .title-artikel span{
+    font-family: 'Lato-Bold', 'Lato Bold', 'Lato';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    text-align: left;
+    color: black;
+}
+.content-box .wrap-mini-artikel_comment{
+  position: relative !important;
+  color: black;
+  top: 123px;
+  left: 17px;
+  width: 100px;
+}
+.category-artikel{
+  width: 99px;
+    height: 13px;
+    font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8px;
+    color: #EE484F;
+    text-align: left;
 }
 .see-more{
     font-family: 'Lato-Bold', 'Lato Bold', 'Lato';
@@ -681,7 +868,6 @@ section.artikel{
 section.program-loop{
   position: relative;
   height: 684px;
-  background-color: #e4e4e4;
   top: -20px
 }
 .header-program-loop{
@@ -712,7 +898,7 @@ section.program-loop{
 }
 .wrap-box_program{
   width: 414px;
-  height: 395px;
+  height: 408px;
   display: block;
   position: relative;
   overflow-y: hidden;
@@ -725,6 +911,9 @@ section.program-loop{
     width: 312px;
     height: 372px;
     border-radius: 2%;
+    -moz-box-shadow: 0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
 }
 .box-program._first{
     background: url(../../images/loop/loop_ngabubuhits.gif) no-repeat;
@@ -758,8 +947,13 @@ section.program-loop{
 section.promo-loop{
   position: relative;
   height: 700px;
-  background-color: #fafafa;
   padding: 15px;
+}
+section.promo-loop .background-img{
+  position: absolute;
+  top: -60px;
+  right: 0;
+  height: 87px;
 }
 .box-promo-loop{
   position: absolute;
@@ -773,6 +967,40 @@ section.promo-loop{
   -moz-box-shadow: 0px 10px 22px rgba(254, 45, 67, 0.2);
   -webkit-box-shadow: 0px 10px 22px rgba(254, 45, 67, 0.2);
   box-shadow: 0px 10px 22px rgba(254, 45, 67, 0.2);
+}
+.box-promo-loop .container-promo{
+    height: 102px;
+    font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.541176470588235);
+    line-height: 22px;
+    position: relative;
+    width: 280px;
+    text-align: center;
+    top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn_cari-tahu{
+position: absolute;
+    width: 264px;
+    height: 49px;
+    background: inherit;
+    background-color: rgba(9, 70, 100, 1);
+    border: none;
+    border-radius: 25px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 105px;
+    padding: 14px;
+    color: #ffffff;
 }
 section.apps-loop_kita{
   position: relative;
@@ -802,15 +1030,24 @@ section.testimonial .background-img{
   width: 94px;
   height: 87px;
 }
+section.testimonial .bottom-img{
+  position: absolute;
+  bottom: 79px;
+  width: 415px;
+  height: 360px;
+}
 section.gabung{
   height: 494px;
   position: relative;
 }
+section.gabung .subheader{
+  width: 28rem
+}
 section.gabung .background-img{
     position: absolute;
-    left: 0px;
+    left: 44px;
     right: 0;
-    width: 278px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     bottom: -9px;
@@ -845,7 +1082,7 @@ section.gabung .background-img{
   color: #FFFFFF;
 }
 .btn-beli_perdana{
-    top: 190px !important;
+    top: 206px !important;
     background-color: white;
     border: 3px solid #ff1f3b;
     box-shadow: none;
@@ -861,7 +1098,16 @@ section.gabung .background-img{
   left: -75px;
   bottom: 152px;
 }
-section .header{
+img.seru-hadiah_bg{
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+section .header, section .box-promo-loop .header{
   font-family: 'Montserrat-Bold', 'Montserrat Bold', 'Montserrat';
   font-weight: 700;
   font-style: normal;
