@@ -64,7 +64,7 @@ $(document).ready(function () {
                 // Calculate distance to translate holder.
                 this.movex = this.index * this.slideWidth + (this.touchstartx - this.touchmovex);
                 // Defines the speed the images should move at.
-                console.log(this.movex);
+                // console.log(this.movex);
                 var panx = 3000 - this.movex / 2;
                 if (this.movex < 600) { // Makes the holder stop moving when there is no more content.
                     this.el.holder.css('transform', 'translate3d(-' + this.movex + 'px,0,0)');

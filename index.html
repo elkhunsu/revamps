@@ -9,9 +9,6 @@
         <!-- ending meta -->
 
         <!-- -->
-        <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
-        <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
-        <link href="data/styles.css" type="text/css" rel="stylesheet"/>
         <link href="assets/css/body.css" type="text/css" rel="stylesheet"/>
         <link preload href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
         <!-- Bootstrap and Other CSS -->
@@ -249,7 +246,7 @@
                     </div>
                 </div>
                 <div class="content-main">
-                    <section class="slider-wrap"    >
+                    <section class="slider-wrap" data-section-name="slider-wrap">
                         <div class="slider" id="slider">
                             <div class="holder">
                                 <div class="slide-wrapper">
@@ -270,7 +267,7 @@
                             <img src="images/icon/1-scroll_bawah.png">
                         </div>
                     </section>
-                    <section class="intro">
+                    <section class="intro" data-section-name="intro">
                         <img src="images/background-image/asset_3_72x_u4.png">
                         <div class="intro_text" data-aos="zoom">
                             <div class="header_intro">
@@ -289,7 +286,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="beli-paket">
+                    <section class="beli-paket" data-section-name="beli-paket">
                         <img class="background-img" src="images/mobile/asset_1_72x_u14.png">
                         <div class="header-beli-paket" data-aos="zoom">
                             Menu Internetan Terfavorit
@@ -343,7 +340,7 @@
                             PAKET LAINNYA
                         </div>
                     </section>
-                    <section class="artikel">
+                    <section class="artikel" data-section-name="artikel">
                         <img class="background-img" src="images/mobile/asset_1_72x_copy_u94.png">
                         <div class="header-artikel" data-aos="zoom">
                             Paling Kekinian
@@ -389,7 +386,7 @@
                                         <div class="title-artikel">
                                             <span>5 Fakta Pasangan Game Of Thrones…</span>
                                         </div>
-                                        <div class="wrap-artikel_comment mini-box">
+                                        <div class="wrap-artikel_comment">
                                             <div class="like-artikel">
                                                 <img src="images/mobile/shape_u36.png">
                                                 <span>25</span>
@@ -398,7 +395,8 @@
                                                 <img src="images/mobile/shape_u40.png">
                                                 <span>15</span>
                                             </div>
-                                        </div>
+                                    </div>
+
                                     </div>
                                 </li>
                                 <li class="mini-box_artikel">
@@ -439,9 +437,36 @@
                             Seru-seruan bareng LOOP bikin skill kamu makin gokil. Cek di sini untuk liat serunya kegiatan LOOP dan ikutan kegiatan berikutnya!
                         </div>
                         <div class="wrap-box_program">
-                            <div class="box-program _first"></div>
-                            <div class="box-program _second"></div>
-                            <div class="box-program _third"></div>
+                            <div class="box-program _first">
+                                <div class="overlay-box-program orange"></div>
+                                <div class="content-box-program">
+                                    <div class="tag-box">
+                                        <img src="images/mobile/oval_4_u321.png">
+                                        <span>ONGOING</span>
+                                    </div>
+                                    <div class="title-program">LOOP NGABUBUHITS</div>
+                                </div>
+                            </div>
+                            <div class="box-program _second">
+                                <div class="overlay-box-program blue"></div>
+                                <div class="content-box-program">
+                                    <div class="tag-box">
+                                        <img src="images/mobile/oval_4_u321.png">
+                                        <span>ONGOING</span>
+                                    </div>
+                                    <div class="title-program">LOOP RUN 2018</div>
+                                </div>
+                            </div>
+                            <div class="box-program _third">
+                                <div class="overlay-box-program red"></div>
+                                <div class="content-box-program">
+                                    <div class="tag-box">
+                                        <img src="images/mobile/oval_4_u321.png">
+                                        <span>ONGOING</span>
+                                    </div>
+                                    <div class="title-program">ILOOP RUN 2018</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="see-more _program">
                             PROGRAM LAINNYA
@@ -542,7 +567,8 @@
         <script type="text/javascript" src="assets/javascript/menu-main.js"></script>
         <script type="text/javascript" src="assets/javascript/menu-user.js"></script>
         <script async type="text/javascript" src="assets/javascript/animated.js"></script><!-- animated css plugin -->
-        <script type="text/javascript" src="assets/javascript/slick.min.js"></script><!-- animated css plugin -->
+        <!-- <script type="text/javascript" src="assets/library/scrollify/jquery.scrollify.js"></script> -->
+        <!-- animated css plugin -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
         <script>
@@ -558,7 +584,6 @@
                 document.addEventListener('aos:out', ({ detail }) => {
                     console.log('animated out', detail);
                 });
-
             });
         </script>
 

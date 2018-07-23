@@ -309,7 +309,6 @@ body {
     width: 304px;
     height: 335px;
     left: 25px;
-    background: url(../../images/mobile/grafis-beli-paket.png) no-repeat !important;
 }
 .card-beli_paket_2{
   left: 355px
@@ -322,7 +321,7 @@ body {
 }
 .content-card{
     border-width: 0px;
-    position: absolute;
+    position: relative;
     left: 0px;
     top: 0px;
     width: 304px;
@@ -332,6 +331,7 @@ body {
     border: none;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
+    background: url(../../images/mobile/grafis-beli-paket.png) no-repeat !important;
   }
 .content-card .harga{
     border-width: 0px;
@@ -937,6 +937,65 @@ section.program-loop{
     background: url('../../images/loop/ilooprun2017.gif') no-repeat;
     background-position-x: center;
     background-size: cover;
+}
+.overlay-box-program{
+    position: relative;
+    width: inherit;
+    height: inherit;
+    opacity: .3;
+}
+.overlay-box-program.orange{
+  background-color: #FFC107
+}
+.overlay-box-program.blue{
+  background-color: #a3eaf0
+}
+.overlay-box-program.red{
+  background-color: #F44336
+}
+.content-box-program{
+    position: absolute;
+    z-index: 10;
+    color: white;
+    width: inherit;
+    height: inherit;
+    top: 0;
+}
+.content-box-program .tag-box{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 90px;
+    height: 23px;
+    border-radius: 3px;
+    background-color: #d0021b;
+    text-align: right;
+    padding-right: 10px;
+}
+.content-box-program .tag-box span{
+    font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.content-box-program .tag-box img{
+    vertical-align: baseline;
+    margin: 2px;
+}
+.content-box-program .title-program{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 312px;
+    text-align: center;
+    font-family: 'Montserrat-Bold', 'Montserrat Bold', 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #FFFFFF;
 }
 .see-more_program{
     position: absolute;

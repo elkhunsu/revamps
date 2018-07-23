@@ -141,9 +141,10 @@ ul{
 .badge.normal{
     display: inherit;
     min-width: 1em;
-    padding: 5px;
+    padding: 4px;
     right: -7px;
-    top: -6px;
+    top: -7px;
+    border: 1.5px solid white;
     background-color: #4e4e4e;
 }
 /*badge notif content*/
@@ -463,6 +464,9 @@ li.red-menu_nav a{
     font-size: 16px;
 }
 .overlay-content_notif{
+    width: 414px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 4rem
 }
 .notif-overlay .nav-content, .nav-content.block-nav{
@@ -472,6 +476,8 @@ li.red-menu_nav a{
     position: fixed;
     z-index: 99999;
     width: 100%;
+    left: 0;
+    right: 0;
     box-shadow: 0 5px 16px -9px #000000
 }
 .nav-content .header-nav{
@@ -663,19 +669,19 @@ div.box-content_title{
     text-align: center
 }
 #promos-content .load-more ,#activity-content .load-more{
-    margin: 10px;
-    left: -10px;
-    width: 100%;
+    position: absolute;
+    width: 414px;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
     border-radius: 0px;
     background-color: #094664;
     border-color: #094664;
-    bottom: -10px;
-    position: fixed;
     height: 48px;
     line-height: 2;
-    box-shadow: 0 5px 19px 3px #000000;
     z-index: 999;
-    font-weight: 600
+    font-weight: 600;
 }
 
 /* activity notif */
@@ -725,6 +731,10 @@ div.box-content_title{
 
 /*users overlay*/
 .user-overlay_content{
+    font-size: 14px;
+    width: 412px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5em;
     font-size: 14px
 }

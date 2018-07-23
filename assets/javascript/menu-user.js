@@ -28,11 +28,11 @@ var menu_user = {
             name: 'LOOPiah',
             link: '0',
             class: 'icon-sprite-menu _loopiah',
-            add_label: [{
-                name_class: 'notif-user_poin',
-                id: "label-putar",
-                text: 'kesempatan putar',
-            }],
+            // add_label: [{
+            //     name_class: 'notif-user_poin',
+            //     id: "label-putar",
+            //     text: 'kesempatan putar',
+            // }],
             sub: null
         }, {
             name: 'Redeem Center',
