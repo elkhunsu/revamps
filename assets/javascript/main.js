@@ -5,7 +5,7 @@
                 body=$('body') ;
                 
                 $('#burger-menu').click(function(){
-                    overlay.toggle('show');
+                    overlay.toggleClass('open');
                     $('#base').toggleClass('open');
                     $('#wrapper').toggleClass('toggled');
                     $(this).toggleClass('open');
@@ -14,6 +14,7 @@
                     $('.main-navigation').toggleClass('open');
                     $('#sidebar-wrapper').toggleClass('open');
                     $('.content-main').toggleClass('open');
+                    $('footer').toggleClass('hide');
                 });
                 $('.site-nav-overlay').click(function(){
                     body.removeClass('site-nav-drawer-open site-nav-transition');

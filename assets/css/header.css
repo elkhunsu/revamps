@@ -226,7 +226,9 @@ ul{
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 2;
 }
-
+.overlay.open{
+    display: flex;
+}
 .navbar-fixed-top {
     right: auto;
 }

@@ -696,6 +696,10 @@ img.main-artikel_img{
   color: #FFFFFF;
   text-align: left;
 }
+.wrap-artikel_comment.mini-box{
+  position: absolute;
+  color: black;
+}
 .like-artikel{
   position: absolute;
   width: 35px;
@@ -1002,6 +1006,17 @@ position: absolute;
     padding: 14px;
     color: #ffffff;
 }
+.label-btn_cari-tahu{
+    width: 77px;
+    height: 21px;
+    font-family: 'Lato-Bold', 'Lato Bold', 'Lato';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+}
 section.apps-loop_kita{
   position: relative;
   background: url('../../images/mobile/loopkita__u129.png') no-repeat;
@@ -1134,12 +1149,27 @@ section .subheader{
   margin-left: auto;
   margin-right: auto;
 }
+/* footer section */
 footer{
   background-color: #ffffff;
   height: 229px;
 }
+footer{
+  display: none;
+}
 footer .wrap-media_social{
   position: relative;
+}
+footer .copyright{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 22rem;
+  word-wrap: break-word;
+  text-align: center;
+  bottom: 36px
 }
 .wrap-media_social img{
     position: absolute;
@@ -1167,17 +1197,7 @@ footer .wrap-media_social{
     margin-right: auto;
     text-align: center;
 }
-footer .copyright{
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  width: 22rem;
-  word-wrap: break-word;
-  text-align: center;
-  bottom: 36px
-}
+/*ending footer section*/
 @media (max-width: 360px){
   .slide img{
     width: 360px
@@ -1208,8 +1228,9 @@ footer .copyright{
         overflow: hidden;
     }
     .content-main.open{
+        position: fixed;
         overflow: hidden;
-        height: 551px;
+        /*height: 551px;*/
         margin-left: 30px;
         margin-top: 0px
     }
