@@ -4,7 +4,8 @@
         <!-- meta start -->
         <title>LOOP</title>
         <meta charset="utf-8">
-        <!--        <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
         <meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1, user-scalable=0">
         <!-- ending meta -->
 
@@ -17,6 +18,7 @@
         <link href="./assets/css/header.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/themes/vader/jquery-ui.min.css" rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./assets/library/slick/slick.min.css"/>
 
         <!-- ending link CSS -->
         <link rel="manifest" href="/manifest.json">
@@ -62,7 +64,7 @@
             </ul>
         </header>
         <div id="wrapper">
-            <div id="main">
+            <main id="main">
                 <div class="notif-overlay">
                     <ul class="nav-content block-nav">
                         <li class="back-button"><i class="fa fa-arrow-left" aria-hidden="true"></i></li>
@@ -247,23 +249,13 @@
                 </div>
                 <div class="content-main">
                     <section class="slider-wrap" data-section-name="slider-wrap">
-                        <div class="slider" id="slider">
-                            <div class="holder">
-                                <div class="slide-wrapper">
-                                    <div class="slide"><img class="slide-image" src="images/banner/banner_FIX1.jpg" /></div>
-                                </div>
-                                <div class="slide-wrapper">
-                                    <div class="slide"><img style="left: -115px;" class="slide-image" src="images/banner/banner-sbmptn.jpg" /></div>
-                                </div>
-                                <div class="slide-wrapper">
-                                    <div class="slide"><img style="transform: translate3d(850px, -500px, 0px);" class="slide-image" src="images/banner/banner-vaganza.jpg" /></div>
-                                </div>
-                                <div class="slide-wrapper">
-                                    <div class="slide"><img style="transform: translate3d(735px, -499px, 0px);" class="slide-image" src="images/banner/banner_ruang-guru.jpg" /></div>
-                                </div>
+                            <div class="slider">
+                                <div><img class="slide-image" src="images/banner/banner_FIX1.jpg" /></div>
+                                <div><img class="slide-image" src="images/banner/banner-sbmptn.jpg" /></div>
+                                <div><img class="slide-image" src="images/banner/banner-vaganza.jpg" /></div>
+                                <div><img class="slide-image" src="images/banner/banner_ruang-guru.jpg" /></div>
                             </div>
-                        </div>
-                        <div class="scroolBottom bounce">
+                            <div class="scroolBottom bounce">
                             <img src="images/icon/1-scroll_bawah.png">
                         </div>
                     </section>
@@ -275,14 +267,26 @@
                             </div>
                             <div class="content_header">  LOOP itu kartu perdana kita-kita! Di sini kamu bisa beli kartu perdana-mu, dan untuk kamu yang udah pake LOOP, pilih paket internet yang kamu mau!</div>
                         </div>
-                        <div class="box_intro">
-                            <div class="box_kartu-1" data-aos="fade-left">
-                                <img src="images/mobile/asset_4_72x_u200.png">
-                                <div class="title-box">Kartu Perdana</div>
+                        <div class="col-sm-12">
+                            <div class="col-xs-12 col-sm-12 box_kartu" >
+                                <div class="container">
+                                    <div class="col-xs-5 col-sm-2">
+                                        <img class="img-responsive" src="images/mobile/asset_4_72x_u200.png">
+                                    </div>
+                                    <div class="col-xs-7 col-sm-3">
+                                        <div class="title-box">Kartu Perdana</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="box_kartu-2" data-aos="fade-right">
-                                <img src="images/mobile/asset_6_u196.png">
-                                <div class="title-box">Paket Internet</div>
+                            <div class="col-xs-12 col-sm-12 box_kartu">
+                                <div class="container">
+                                    <div class="col-xs-5 col-sm-2">
+                                        <img class="img-responsive" src="images/mobile/asset_6_u196.png" alt="">
+                                    </div>
+                                    <div class="col-xs-7 col-sm-3">
+                                        <div class="title-box">Paket Internet</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -349,8 +353,8 @@
                             Jadi yang pertama tau berita dan cerita paling fresh di dunia film, musik, game, lifestyle dan keseruan lainnya!
                         </div>
                         <div class="wrap-box_artikel" data-aos="fade-left">
-                            <div class="box-artikel">
-                                <img class="main-artikel_img" src="images/mobile/banner_sekolah__1__u29.png">
+                            <div class="col-sm-12 box-artikel">
+                                <img class="img-responsive main-artikel_img" src="images/mobile/banner_sekolah.png">
                                 <div class="wrap-artikel_text">
                                     <div class="artikel-tag">
                                         <span>SCHOOL</span>
@@ -373,6 +377,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <br>
                             <ul class="mini-box_artikel-container">
                                 <li class="mini-box_artikel">
                                     <div class="main-image">
@@ -401,7 +406,7 @@
                                 </li>
                                 <li class="mini-box_artikel">
                                     <div class="main-image">
-                                        <img src="images/mobile/kremlin_tour_u53.png">
+                                        <img src="./images/mobile/kremlin.png">
                                     </div>
                                     <div class="content-box">
                                         <div class="category-artikel">
@@ -430,13 +435,13 @@
                         </div>
                     </section>
                     <section class="program-loop">
-                        <div class="header-program-loop">
+                        <div class="header-program-loop" data-aos="zoom-out">
                             Tunjukin Skill Terbaikmu di Sini!
                         </div>
-                        <div class="subheader-program-loop">
+                        <div class="subheader-program-loop" data-aos="zoom-out">
                             Seru-seruan bareng LOOP bikin skill kamu makin gokil. Cek di sini untuk liat serunya kegiatan LOOP dan ikutan kegiatan berikutnya!
                         </div>
-                        <div class="wrap-box_program">
+                        <div class="wrap-box_program" data-aos="fade-left">
                             <div class="box-program _first">
                                 <div class="overlay-box-program orange"></div>
                                 <div class="content-box-program">
@@ -472,9 +477,9 @@
                             PROGRAM LAINNYA
                         </div>
                     </section>
-                    <section class="promo-loop">
+                    <section class="promo-loop" data-aos="zoom-in">
                         <img class="background-img" src="images/mobile/asset_1_72x_copy_u100.png">
-                        <div class="box-promo-loop">
+                        <div class="col-xs-12 box-promo-loop">
                             <div class="header" style="margin-top: 19px;margin-bottom: 15px;">
                                 <span>Seru dan Banyak Hadiah</span>
                             </div>
@@ -491,16 +496,16 @@
                     </section>
                     <section class="apps-loop_kita">
                         <img class="google-play" src="images/mobile/shape_u132.png">
-                        <div class="header">
+                        <div class="header" data-aos="zoom-out">
                             Hemat (Kuota) Pangkal Kaya
                         </div>
-                        <div class="subheader">Mau punya aplikasi yang ngasih kamu diskon setiap beli paket internet!, Bisa hemat kuota supaya nggak boros dan jadi yang paling up to date? Download aplikasi LOOPKita di Google PlayStore sekarang!</div>
+                        <div class="subheader" data-aos="zoom-out">Mau punya aplikasi yang ngasih kamu diskon setiap beli paket internet!, Bisa hemat kuota supaya nggak boros dan jadi yang paling up to date? Download aplikasi LOOPKita di Google PlayStore sekarang!</div>
                     </section>
                     <section class="testimonial">
                         <img class="background-img" src="images/mobile/asset_1_72x_copy_u151.png">
                         <img class="bottom-img" src="images/background-image/1-katamereka_BG.png">
-                        <div class="header">Kata Mereka LOOP itu…</div>
-                        <div class="testimonial_section">
+                        <div class="header" data-aos="zoom-out">Kata Mereka LOOP itu…</div>
+                        <div class="testimonial_section" data-aos="zoom-out">
                             <div class="card_testi">
                                 <div class="user_testi">
                                     <span style="font-size: 100px;color: red;">“</span>
@@ -518,7 +523,7 @@
                                     <span class="testi-text">Bukan cuma dapat teman baru, ikutan LOOP Squad juga ternyata bisa bikin aku menangin hadiah jalan-jalan ke Singapore! Hadiahnya beneran, gak pake bohong!</span>
                                 </div>
                                 <div class="testi-profile">
-                                    <span class="testi-photo"><img id="testi-img" class="img " src="images/mobile/rawpixel-442649-unsplash_u180.png"></span>
+                                    <span class="testi-photo"><img id="testi-img" class="img " src="images/mobile/testimoni.png"></span>
                                     <span class="testi-name">Jane Roe</span>
                                     <span class="testi-member">LOOP KePo Member</span>
                                 </div>
@@ -528,21 +533,21 @@
                     <section class="gabung">
                         <img class="left-background_img" src="images/mobile/asset_1_72x_u14.png">
                         <img class="background-img" src="images/background-image/1-gabung_img.png">
-                        <div class="header">GABUNG SEKARANG, BELI PERDANAMU </div>
-                        <div class="subheader">Jadi,tunggu apalagi? Gabung dan jadi yang paling update bareng Loop! Yes, I want to be a LOOPER!</div>
-                        <div class="btn-gabung">
+                        <div class="header" data-aos="zoom-out">GABUNG SEKARANG, BELI PERDANAMU </div>
+                        <div class="subheader" data-aos="zoom-out">Jadi,tunggu apalagi? Gabung dan jadi yang paling update bareng Loop! Yes, I want to be a LOOPER!</div>
+                        <div class="btn-gabung" data-aos="fade-right">
                             <div class="label-btn_gabung">
                                 GABUNG SEKARANG
                             </div>
                         </div>
-                        <div class="btn-beli_perdana">
+                        <div class="btn-beli_perdana" data-aos="fade-left">
                             <div class="label-btn_perdana">
                                 Beli Kartu Perdana
                             </div>
                         </div>
                     </section>
                 </div>
-            </div> <!-- main -->
+            </main> <!-- main -->
             <footer>
                 <div class="wrap-media_social">
                     <img src="images/mobile/sosmed.png">
@@ -561,12 +566,15 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ujs/1.2.2/rails.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <script src="assets/library/slick/slick.min.js"></script>
 
         <!-- start menu user -->
+        <script type="text/javascript" src="/app.js"></script>
         <script type="text/javascript" src="assets/javascript/main.js"></script>
         <script type="text/javascript" src="assets/javascript/menu-main.js"></script>
         <script type="text/javascript" src="assets/javascript/menu-user.js"></script>
-        <script async type="text/javascript" src="assets/javascript/animated.js"></script><!-- animated css plugin -->
+        <script async type="text/javascript" src="assets/javascript/animated.js"></script>
+        <!-- animated css plugin -->
         <!-- <script type="text/javascript" src="assets/library/scrollify/jquery.scrollify.js"></script> -->
         <!-- animated css plugin -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -583,6 +591,14 @@
 
                 document.addEventListener('aos:out', ({ detail }) => {
                     console.log('animated out', detail);
+                });
+
+                $('.slider').slick({
+                    autoplaySpeed: 3000,
+                    arrow: false,
+                    dots: false,
+                    mobileFirst: true,
+                    arrows: false
                 });
             });
         </script>

@@ -173,59 +173,6 @@ body {
 .animate {
   transition: transform 0.3s ease-out;
 }
-
-.slider-wrap {
-  width: 414px;
-  height: 735px;
-  z-index: 1;
-  position: relative;
-}
-
-.slider {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.ms-touch.slider {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  
-  -ms-overflow-style: none;
-  /* Hides the scrollbar. */
-  
-  -ms-scroll-chaining: none;
-  /* Prevents Metro from swiping to the next tab or app. */
-  
-  -ms-scroll-snap-type: mandatory;
-  /* Forces a snap scroll behavior on your images. */
-  
-  -ms-scroll-snap-points-x: snapInterval(0%, 100%);
-  /* Defines the y and x intervals to snap to when scrolling. */
-}
-
-.holder {
-  width: 303%;
-  max-height: 758px;
-  height: 100%;
-  /*margin-left: 67px;*/
-  /*overflow-y: hidden;*/
-}
-
-.slide-wrapper {
-  width: 42.333%;
-  height: 100%;
-  float: left;
-  height: 500px;
-  position: relative;
-  /*overflow: hidden;*/
-}
-
-.slide {
-  height: 100%;
-  position: relative;
-}
-
 .temp {
   position: absolute;
   z-index: 1;
@@ -237,27 +184,8 @@ body {
   font-weight: 100;
 }
 
-.slide img {
-  position: absolute;
+img.slide-image{
   width: 414px;
-  z-index: 0;
-  transform: translatex(0px);
-}
-
-.slide:before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40%;
-}
-
-.slide div {
-  width: 300px;
-  height: 500px;
-  z-index: 0;
 }
 
 .scroolBottom{
@@ -491,6 +419,7 @@ section.intro{
     background-position: bottom;
     background-size: contain;
     overflow: hidden;
+    padding-top: 5em;
 }
 .intro img{
     right: 130px;
@@ -503,7 +432,7 @@ section.intro{
     margin-left: auto;
     margin-right: auto;
     top: 70px;
-    position: absolute;
+    /*position: absolute;*/
     padding: 0px 10px 0px 10px;
 }
 .box_intro{
@@ -524,35 +453,22 @@ section.intro{
     font-size: 14px;
     line-height: 20px;
 }
-.box_kartu-1, .box_kartu-2{
-    position: absolute;
-    width: 382px;
+.box_kartu{
     height: 164px;
+    padding: 15px;
+    margin-top: 25px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 4px;
     -moz-box-shadow: 0px 6px 20px rgba(255, 163, 163, 0.501960784313725);
     -webkit-box-shadow: 0px 6px 20px rgba(255, 163, 163, 0.501960784313725);
     box-shadow: 0px 6px 20px rgba(255, 163, 163, 0.501960784313725)
 }
-.box_kartu-1{
-    bottom: 267px
-}
-.box_kartu-2{
-    bottom: 71px;
-}
-.box_kartu-1 img{
-  position: absolute;
+.box_kartu img{
   width: 162px;
-  left: 28px;
+  left: 0;
   top: 10px;
 }
-.box_kartu-2 img{
-    width: 162px;
-    position: absolute;
-    left: 29px;
-    top: 7px;
-}
-.box_kartu-1 .title-box, .box_kartu-2 .title-box{
+.box_kartu .title-box{
     font-family: 'Lato-Bold', 'Lato Bold', 'Lato';
     font-weight: 700;
     font-style: normal;
@@ -560,8 +476,8 @@ section.intro{
     color: #4A4A4A;
     margin: 0 auto;
     position: absolute;
-    right: 46px;
-    top: 60px;
+    right: 22px;
+    top: 53px;
 }
 section.beli-paket{
   position: relative;
@@ -628,9 +544,11 @@ section.artikel{
   -webkit-box-shadow:0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(255, 236, 235), 0 6px 33px 0 rgba(255, 0, 0, 0.19);
   border-radius: 4px;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }
 img.main-artikel_img{
-  width: inherit;
+  width: 100%;
   height: inherit;
   opacity: .3;
   border-radius: 4px;
@@ -731,7 +649,7 @@ img.main-artikel_img{
     display: flex;
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
-    padding: 0;
+    padding: 1px;
     margin: 0;
     left: -6px;
     position: relative;
@@ -830,7 +748,7 @@ img.main-artikel_img{
     font-size: 14px;
     position: absolute;
     color: #9b9b9b;
-    bottom: 36px;
+    bottom: 65px;
     margin-left: auto;
     margin-right: auto;
     width: 12rem;
@@ -1189,7 +1107,7 @@ section .header, section .box-promo-loop .header{
   color: #4A4A4A;
   line-height: 34px;
   text-align: center;
-  width: 34rem;
+  /*width: 34rem;*/
   margin-left: auto;
   margin-right: auto;
   z-index: 2;
@@ -1257,28 +1175,72 @@ footer .copyright{
     text-align: center;
 }
 /*ending footer section*/
-@media (max-width: 360px){
-  .slide img{
-    width: 360px
+
+/* section responsive mobile */
+@media(max-width: 375px){
+  #wrapper{
+    width: 375px;
   }
-  #u236_text{
-    width: 325px;
+  .content-main{
+    width: 375px;
+    margin-top: 53px;
   }
-  #u193_text{
-    width: 298px
+  .slider-wrap{
+    width: 375px;
   }
-  #u199_div{
-    width: 336px;
+  .holder{
+    width: 310%
   }
-  #u200_img{
-    top: 17px;
-    width: 80%;
-    height: 80%;
+  img.slide-image{
+    width: 375px;
+  }
+  .scroolBottom{
+    width: 28px;
+    top: 650px
+  }
+  .wrap-box_artikel{
+    margin-left: 0px !important;
+    margin-right: 0px !important
+  }
+  .box-artikel{
+    width: 375px
+  }
+  .mini-box_artikel-container{
+    left: 0px
+  }
+  .mini-box_artikel{
+    width: 175px
+  }
+  section.gabung .background-img{
+    width: 375px
+  }
+  .wrap-media_social{
+    width: 375px
   }
 }
 
+@media screen and (max-width: 360px){
+  #wrapper{
+    width: 360px;
+  }
+  .content-main{
+    width: 360px;
+    margin-top: 53px;
+  }
+  .slider-wrap{
+    width: 360px;
+  }
+  .mini-box_artikel{
+    width: 169px
+  }
+  img.slide-image{
+    width: 360px;
+  }
 
-@media screen and (max-width: 480px){
+}
+
+
+@media screen and (max-width: 414px){
     #sidebar-wrapper.open{
         width: 285px
     }
