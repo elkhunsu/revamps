@@ -832,6 +832,17 @@ legend{
     font-size: 23px;
     font-weight: 800;
 }
+@media screen and (max-width: 360px){
+    #promos-content .load-more, #activity-content .load-more{
+        width: 355px
+    }
+    .overlay-content_notif{
+        width: 355px
+    }
+    .user-overlay_content{
+        width: 355px;
+    }
+}
 @media screen and (max-width: 450px) {
     .site-nav {padding-top: 15px;}
     .site-nav a {font-size: 18px;}

@@ -27,6 +27,93 @@
                         </div>
                         <div class="menu-users">
                             <ul class="nav menu-users_nav" id="menu-user_nav">
-                            <li><a href="#0"><div class="icon-sprite-menu _account"></div>Akun Saya</a></li><li><a href="#0"><div class="icon-sprite-menu _feed"></div>Feed</a></li><li><a href="#0"><div class="icon-sprite-menu _community"></div>Community</a></li><li><a href="#0"><div class="icon-sprite-menu _shareyourstory"></div>Share Yout Story</a></li><li><a href="#0"><div class="icon-sprite-menu _loopsquad"></div>LOOP Squad</a></li><li><a href="#0"><div class="icon-sprite-menu _loopiah"></div>LOOPiah<div id="putar-notif" class="notif-user_poin">kesempatan putar<div class="putar-badge">12</div></div></a></li><li><a href="#0"><div class="icon-sprite-menu _redeemcenter"></div>Redeem Center</a></li><li><a href="#0"><div class="icon-sprite-menu _signout"></div>Keluar</a></li></ul>
-                        </div>                    </div>
+                            </ul>
+                        </div>                    
+                    </div>
                 </div>
+<script type="text/javascript">
+    var menu_user = {
+        menu: [{
+            name: 'Akun Saya',
+            link: '0',
+            class: 'icon-sprite-menu _account',
+            sub: null
+        }, {
+            name: 'Feed',
+            link: '0',
+            class: 'icon-sprite-menu _feed',
+            sub: null
+        }, {
+            name: 'Community',
+            link: '0',
+            class: 'icon-sprite-menu _community',
+            sub: null
+        }, {
+            name: 'Share Yout Story',
+            link: '0',
+            class: 'icon-sprite-menu _shareyourstory',
+            sub: null
+        }, {
+            name: 'LOOP Squad',
+            link: '0',
+            class: 'icon-sprite-menu _loopsquad',
+            sub: null
+        }, {
+            name: 'LOOPiah',
+            link: '0',
+            class: 'icon-sprite-menu _loopiah',
+            // add_label: [{
+            //     name_class: 'notif-user_poin',
+            //     id: "label-putar",
+            //     text: 'kesempatan putar',
+            // }],
+            sub: null
+        }, {
+            name: 'Redeem Center',
+            link: '0',
+            class: 'icon-sprite-menu _redeemcenter',
+            sub: null
+        }, {
+            name: 'Keluar',
+            link: '0',
+            class: 'icon-sprite-menu _signout',
+            sub: null
+        }]
+    };
+    var menu_user = JSON.stringify(menu_user);
+    localStorage.setItem("userMenuList", menu_user);
+    var userMenuList = JSON.parse(localStorage.getItem("userMenuList"));
+
+    var getMenuItemUser = function (itemData) {
+        var icons = $("<div>").addClass(itemData.class);
+        //buat dua kondisi ketika tidak ada sub maka ada div didalam a
+        if(itemData.add_label){
+            var item = $("<li>")
+                    .append(
+                $("<a>", {
+                    href: '#' + itemData.link,
+                    html: itemData.name
+                }).prepend(
+                icons
+                ).append($("<div id='putar-notif'>").addClass(itemData.add_label[0].name_class).text(itemData.add_label[0].text).append($('<div>').addClass('putar-badge').text("1")))); 
+            } else {
+                var item = $("<li>")
+                        .append(
+                    $("<a>", {
+                        href: '#' + itemData.link,
+                        html: itemData.name
+                    }).prepend(
+                    icons
+                    ));   
+            }       
+
+        return item;
+    };
+
+    var $menuItemUser = $("#menu-user_nav");
+    $.each(userMenuList.menu, function () {
+        $menuItemUser.append(
+            getMenuItemUser(this)
+        );
+    });  
+</script>
