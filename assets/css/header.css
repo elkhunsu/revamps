@@ -1,3 +1,56 @@
+#menu-sidebar{
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+}
+.nav-content{
+    display: flex;
+    padding: 10px 16px 6px 16px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 414px;
+    box-shadow: 0 5px 16px -9px #000000;
+  }
+
+.nav-content.scroll{
+    height: 48px;
+    transition: height 0.25s ease-in;
+}
+.main-navigation{
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    left: 0;
+}
+
+.main-navigation.open{
+    position: unset;
+    overflow: hidden;
+}
+
+.main-navigation.open .nav-content{
+    margin-left: 288px;
+
+}
+
+.main-navigation.open > ul > li{
+    /*
+      flex-grow: 1;
+      flex-shrink: 1;
+       set value for the flex basis, the two properties above will evenly 
+      divide the space. 
+      flex-basis: 20px;
+    
+      -webkit-flex-grow: 1;
+      -webkit-flex-shrink: 1;
+    */
+    margin: 5px;
+    overflow: hidden;
+    padding-left: 15px;
+}
 #burger-menu{
     width: 22px;
     margin-top: 7px;
@@ -843,7 +896,14 @@ legend{
         width: 355px;
     }
 }
+@media screen and (max-width: 414px){
+    #sidebar-wrapper.open{
+        width: 285px
+    }
+}
+
 @media screen and (max-width: 450px) {
     .site-nav {padding-top: 15px;}
     .site-nav a {font-size: 18px;}
 }
+

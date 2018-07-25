@@ -45,27 +45,6 @@ body {
     overflow-x: hidden;
 }
 
-.nav-content{
-    display: flex;
-    padding: 10px 16px 6px 16px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 414px;
-    box-shadow: 0 5px 16px -9px #000000;
-  }
-
-.nav-content.scroll{
-    height: 48px;
-    transition: height 0.25s ease-in;
-}
-
-#menu-sidebar{
-    margin-top: 30px;
-    font-size: 16px;
-    font-family: 'Lato-Regular', 'Lato';
-    font-weight: 400;
-}
-
 #main{
     transition: margin-left .5s;
 }
@@ -74,40 +53,6 @@ body {
     /*margin-top: 70px;*/
 }
 
-.main-navigation{
-    background: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 999;
-    left: 0;
-}
-
-.main-navigation.open{
-    position: unset;
-    overflow: hidden;
-}
-
-.main-navigation.open .nav-content{
-    margin-left: 288px;
-
-}
-
-.main-navigation.open > ul > li{
-    /*
-      flex-grow: 1;
-      flex-shrink: 1;
-       set value for the flex basis, the two properties above will evenly 
-      divide the space. 
-      flex-basis: 20px;
-    
-      -webkit-flex-grow: 1;
-      -webkit-flex-shrink: 1;
-    */
-    margin: 5px;
-    overflow: hidden;
-    padding-left: 15px;
-}
 .gallery {
   background: #EEE;
 }
@@ -447,11 +392,14 @@ section.intro{
     font-size: 28px;
 }
 .content_header{
-      font-family: 'Lato-Regular', 'Lato';
+    font-family: 'Lato-Regular', 'Lato';
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
     line-height: 20px;
+    width: 27rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 .box_kartu{
     height: 164px;
@@ -491,7 +439,7 @@ section.beli-paket{
   color: #4A4A4A;
   line-height: 34px;
   text-align: center;
-  width: 34rem;
+  width: 30rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 72px;
@@ -505,7 +453,7 @@ section.beli-paket{
     color: #666666;
     margin: 9px;
     text-align: center;
-    width: 30rem;
+    width: 26rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -755,6 +703,7 @@ img.main-artikel_img{
     left: 0;
     right: 0;
     text-decoration: underline;
+    text-align: center
 }
 .see-more._program{
   width: 14rem;
@@ -769,7 +718,7 @@ img.main-artikel_img{
   color: #4A4A4A;
   line-height: 34px;
   text-align: center;
-  width: 34rem;
+  width: 20rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 72px;
@@ -783,7 +732,7 @@ img.main-artikel_img{
     color: #666666;
     margin: 9px;
     text-align: center;
-    width: 30rem;
+    width: 25rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -800,7 +749,7 @@ section.program-loop{
   color: #4A4A4A;
   line-height: 34px;
   text-align: center;
-  width: 34rem;
+  width: 30rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 72px;
@@ -814,7 +763,7 @@ section.program-loop{
     color: #666666;
     margin: 9px;
     text-align: center;
-    width: 31rem;
+    width: 27rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1010,6 +959,12 @@ section.apps-loop_kita{
   margin-left: auto;
   margin-right: auto;
 }
+.apps-loop_kita .header{
+  width: 22rem
+}
+.apps-loop_kita .subheader{
+  width: 27rem;
+}
 section.testimonial{
   position: relative;
   height: 756px;
@@ -1107,7 +1062,7 @@ section .header, section .box-promo-loop .header{
   color: #4A4A4A;
   line-height: 34px;
   text-align: center;
-  /*width: 34rem;*/
+  width: 30rem;
   margin-left: auto;
   margin-right: auto;
   z-index: 2;
@@ -1131,13 +1086,16 @@ footer{
   background-color: #ffffff;
   height: 229px;
 }
-footer{
-  display: none;
-}
 footer .wrap-media_social{
   position: relative;
 }
 footer .copyright{
+  font-family: 'Lato-Regular', 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #4A4A4A;
+  font-size: 14px;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -1211,6 +1169,9 @@ footer .copyright{
   .mini-box_artikel{
     width: 175px
   }
+  .box-promo-loop{
+    width: 348px
+  }
   section.gabung .background-img{
     width: 375px
   }
@@ -1236,14 +1197,12 @@ footer .copyright{
   img.slide-image{
     width: 360px;
   }
-
+  .box-promo-loop{
+    width: 330px
+  }
 }
 
-
 @media screen and (max-width: 414px){
-    #sidebar-wrapper.open{
-        width: 285px
-    }
     #main.open{
         margin-left: 286px;
         overflow: hidden;

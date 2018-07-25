@@ -3,7 +3,7 @@
   "short_name": "LOOP ID",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait",
   "Scope": "/",
   "start_url": "/",
